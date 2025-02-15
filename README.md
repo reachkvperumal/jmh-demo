@@ -97,9 +97,11 @@ If a were at different offsets in Subclass1 and Subclass2, the JVM would need to
 - No practical JVM implementation does this because it is unnecessary and inefficient.
 - By keeping superclass fields at consistent offsets, the JVM ensures efficient and predictable field access, which is critical for performance in object-oriented programs.
 
-- [Dead-Code Elimination](#Dead-Code Elimination)
-- [False Sharing](#False Sharing)
-- [Write Wall](#Write Wall)
+---
+
+- [Dead-Code Elimination](#dead-code-elimination)
+- [False Sharing](#false-sharing)
+- [Write Wall](#write-wall)
 
 
 ## Dead-Code Elimination
