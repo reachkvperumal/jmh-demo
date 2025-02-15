@@ -26,7 +26,7 @@ public class BenchmarkState implements AutoCloseable {
 
     @Setup(Level.Trial)
     public void init() {
-        System.out.printf("Initializing Spring context in fork: %s%n",System.identityHashCode(this));
+        System.out.printf("Initializing Spring context in fork: %s%n", System.identityHashCode(this));
         System.out.printf("Setup executed in JVM: %s%n", ManagementFactory.getRuntimeMXBean().getName());
         context = SpringApplication.run(JmhDemoApplication.class);
         /*context = new SpringApplicationBuilder(JmhDemoApplication.class)
@@ -36,10 +36,10 @@ public class BenchmarkState implements AutoCloseable {
 
     @TearDown(Level.Trial)
     public void shutdown() {
-        if(TEAR_DOWN_FLAG.compareAndSet(false,true)) {
-            try{
+        if (TEAR_DOWN_FLAG.compareAndSet(false, true)) {
+            try {
                 System.out.printf("Setup executed in JVM: %s%n", ManagementFactory.getRuntimeMXBean().getName());
-            }finally {
+            } finally {
                 TEAR_DOWN_CTX.countDown();
                 context.close();
                 System.out.printf("Setup executed in JVM: %s%n", ManagementFactory.getRuntimeMXBean().getName());
@@ -49,13 +49,12 @@ public class BenchmarkState implements AutoCloseable {
     }
 
     @Override
-    public void close() throws Exception {
+    public void close() {
         shutdown();
         try {
             TEAR_DOWN_CTX.await(2, TimeUnit.SECONDS);
-        }catch (InterruptedException e){
+        } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
-            System.out.println(ExceptionUtils.getRootCause(e));
         }
     }
 }

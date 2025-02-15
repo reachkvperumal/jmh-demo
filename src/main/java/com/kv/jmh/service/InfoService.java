@@ -35,7 +35,7 @@ public class InfoService {
                 .retrieve()
                 .bodyToFlux(InfoDO.class)
                 .collectList()
-                .subscribe(v -> future.complete(v),
+                .subscribe(future::complete,
                         e -> future.completeExceptionally(ExceptionUtils.getRootCause(e)));
         try {
             return future.get();
