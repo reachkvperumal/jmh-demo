@@ -1,6 +1,6 @@
 # JMH version: 1.37
 # VM version: JDK 22.0.2, OpenJDK 64-Bit Server VM, 22.0.2+9-70
-# VM invoker: /opt/homebrew/Cellar/openjdk/22.0.1/libexec/openjdk.jdk/Contents/Home/bin/java
+# VM invoker: /opt/homebrew/Cellar/openjdk/22.0.2/libexec/openjdk.jdk/Contents/Home/bin/java
 # VM options: -Dfile.encoding=UTF-8
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 3 s each
@@ -43,7 +43,7 @@ Result "com.kv.jmh.service.InfoServiceBenchmarkTest.getGadgetInfoTest":
 
 # JMH version: 1.37
 # VM version: JDK 22.0.2, OpenJDK 64-Bit Server VM, 22.0.2+9-70
-# VM invoker: /opt/homebrew/Cellar/openjdk/22.0.1/libexec/openjdk.jdk/Contents/Home/bin/java
+# VM invoker: /opt/homebrew/Cellar/openjdk/22.0.2/libexec/openjdk.jdk/Contents/Home/bin/java
 # VM options: -Dfile.encoding=UTF-8
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 3 s each
@@ -86,7 +86,7 @@ Result "com.kv.jmh.service.InfoServiceBenchmarkTest.getGadgetInfoTest":
 
 # JMH version: 1.37
 # VM version: JDK 22.0.2, OpenJDK 64-Bit Server VM, 22.0.2+9-70
-# VM invoker: /opt/homebrew/Cellar/openjdk/22.0.1/libexec/openjdk.jdk/Contents/Home/bin/java
+# VM invoker: /opt/homebrew/Cellar/openjdk/22.0.2/libexec/openjdk.jdk/Contents/Home/bin/java
 # VM options: -Dfile.encoding=UTF-8
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 3 s each
@@ -238,7 +238,7 @@ Result "com.kv.jmh.service.InfoServiceBenchmarkTest.getGadgetInfoTest":
 
 # JMH version: 1.37
 # VM version: JDK 22.0.2, OpenJDK 64-Bit Server VM, 22.0.2+9-70
-# VM invoker: /opt/homebrew/Cellar/openjdk/22.0.1/libexec/openjdk.jdk/Contents/Home/bin/java
+# VM invoker: /opt/homebrew/Cellar/openjdk/22.0.2/libexec/openjdk.jdk/Contents/Home/bin/java
 # VM options: -Dfile.encoding=UTF-8
 # Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
 # Warmup: 2 iterations, 3 s each
