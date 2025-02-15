@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: jmh-demo
+
+restful-api:
+  endpoint: https://jsonplaceholder.typicode.com/
+  path: /posts
