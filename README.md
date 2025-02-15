@@ -97,20 +97,18 @@ If a were at different offsets in Subclass1 and Subclass2, the JVM would need to
 - No practical JVM implementation does this because it is unnecessary and inefficient.
 - By keeping superclass fields at consistent offsets, the JVM ensures efficient and predictable field access, which is critical for performance in object-oriented programs.
 
-[Dead-Code Elimination](#link1)
-
-[False Sharing](#link2)
-
-[Write Wall](#link3)
+- [Dead-Code Elimination](#Dead-Code Elimination)
+- [False Sharing](#False Sharing)
+- [Write Wall](#Write Wall)
 
 
-## Dead-Code Elimination{#link1}
+## Dead-Code Elimination
 - The JVM is highly optimized and may eliminate (or "optimize away") code that it determines is unnecessary. This is called Dead Code Elimination (DCE).
 - If a benchmark method produces a result that is not used, the JVM might skip the computation entirely, leading to inaccurate benchmark results.
 __Solution:__
 - Use Blackholes to consume the results of computations. This ensures that the JVM cannot optimize away the code.
 
-## False Sharing{#link2}
+## False Sharing
 - False sharing occurs when multiple threads modify variables that reside on the same CPU cache line.
 - This causes cache line invalidation and forces the CPU to reload the cache line, degrading performance.
 - In benchmarks, if multiple threads read/write shared state, false sharing can artificially inflate or deflate performance measurements.
@@ -150,7 +148,7 @@ public class FalseSharingExample {
 - In benchmarkFalseSharing, value1 and value2 might reside on the same cache line, causing false sharing.
 - In benchmarkNoFalseSharing, the state is isolated in local variables, avoiding false sharing.
  
-## Write Wall{#link3}
+## Write Wall
 __Writing to memory is more expensive than reading because it:__
 - Disturbs CPU caches.
 - Pollutes write buffers.
