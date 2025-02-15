@@ -97,9 +97,12 @@ If a were at different offsets in Subclass1 and Subclass2, the JVM would need to
 - No practical JVM implementation does this because it is unnecessary and inefficient.
 - By keeping superclass fields at consistent offsets, the JVM ensures efficient and predictable field access, which is critical for performance in object-oriented programs.
 
-1. [Dead-Code Elimination](#Dead-Code Elimination)
-2. [False Sharing](#False Sharing)
-3. [Write Wall](#Write Wall)
+[Dead-Code Elimination](#Dead-Code Elimination)
+
+[False Sharing](#False Sharing)
+
+[Write Wall](#Write Wall)
+
 
 # Dead-Code Elimination
 - The JVM is highly optimized and may eliminate (or "optimize away") code that it determines is unnecessary. This is called Dead Code Elimination (DCE).
