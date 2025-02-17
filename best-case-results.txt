@@ -1,0 +1,330 @@
+# JMH version: 1.37
+# VM version: JDK 22.0.2, OpenJDK 64-Bit Server VM, 22.0.2+9-70
+# VM invoker: C:\Users\reach\.jdks\openjdk-22.0.2\bin\java.exe
+# VM options: -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 3 s each
+# Measurement: 3 iterations, 3 ms each
+# Timeout: 2 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.kv.jmh.util.metrics.BestCaseTest.trace
+
+# Run progress: 0.00% complete, ETA 00:00:54
+# Fork: 1 of 3
+# Warmup Iteration   1: 5.932 ops/ms
+# Warmup Iteration   2: 6.503 ops/ms
+Iteration   1: 6.499 ops/ms
+Iteration   2: 6.592 ops/ms
+Iteration   3: 6.523 ops/ms
+
+# Run progress: 11.11% complete, ETA 00:00:53
+# Fork: 2 of 3
+# Warmup Iteration   1: 5.943 ops/ms
+# Warmup Iteration   2: 6.269 ops/ms
+Iteration   1: 6.209 ops/ms
+Iteration   2: 6.535 ops/ms
+Iteration   3: 6.692 ops/ms
+
+# Run progress: 22.22% complete, ETA 00:00:46
+# Fork: 3 of 3
+# Warmup Iteration   1: 6.402 ops/ms
+# Warmup Iteration   2: 6.396 ops/ms
+Iteration   1: 6.272 ops/ms
+Iteration   2: 6.264 ops/ms
+Iteration   3: 6.017 ops/ms
+
+
+Result "com.kv.jmh.util.metrics.BestCaseTest.trace":
+  6.400 ±(99.9%) 0.368 ops/ms [Average]
+  (min, avg, max) = (6.017, 6.400, 6.692), stdev = 0.219
+  CI (99.9%): [6.033, 6.768] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 22.0.2, OpenJDK 64-Bit Server VM, 22.0.2+9-70
+# VM invoker: C:\Users\reach\.jdks\openjdk-22.0.2\bin\java.exe
+# VM options: -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 3 s each
+# Measurement: 3 iterations, 3 ms each
+# Timeout: 2 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.kv.jmh.util.metrics.BestCaseTest.trace
+
+# Run progress: 33.32% complete, ETA 00:00:39
+# Fork: 1 of 3
+# Warmup Iteration   1: 0.154 ms/op
+# Warmup Iteration   2: 0.151 ms/op
+Iteration   1: 0.146 ms/op
+Iteration   2: 0.144 ms/op
+Iteration   3: 0.144 ms/op
+
+# Run progress: 44.43% complete, ETA 00:00:32
+# Fork: 2 of 3
+# Warmup Iteration   1: 0.156 ms/op
+# Warmup Iteration   2: 0.160 ms/op
+Iteration   1: 0.153 ms/op
+Iteration   2: 0.159 ms/op
+Iteration   3: 0.164 ms/op
+
+# Run progress: 55.54% complete, ETA 00:00:26
+# Fork: 3 of 3
+# Warmup Iteration   1: 0.159 ms/op
+# Warmup Iteration   2: 0.157 ms/op
+Iteration   1: 0.152 ms/op
+Iteration   2: 0.153 ms/op
+Iteration   3: 0.146 ms/op
+
+
+Result "com.kv.jmh.util.metrics.BestCaseTest.trace":
+  0.151 ±(99.9%) 0.012 ms/op [Average]
+  (min, avg, max) = (0.144, 0.151, 0.164), stdev = 0.007
+  CI (99.9%): [0.139, 0.163] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 22.0.2, OpenJDK 64-Bit Server VM, 22.0.2+9-70
+# VM invoker: C:\Users\reach\.jdks\openjdk-22.0.2\bin\java.exe
+# VM options: -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 3 s each
+# Measurement: 3 iterations, 3 ms each
+# Timeout: 2 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: com.kv.jmh.util.metrics.BestCaseTest.trace
+
+# Run progress: 66.65% complete, ETA 00:00:19
+# Fork: 1 of 3
+# Warmup Iteration   1: 0.159 ±(99.9%) 0.003 ms/op
+# Warmup Iteration   2: 0.162 ±(99.9%) 0.002 ms/op
+Iteration   1: 0.170 ±(99.9%) 0.033 ms/op
+                 p0.00:   0.081 ms/op
+                 p0.50:   0.158 ms/op
+                 p0.90:   0.256 ms/op
+                 p0.95:   0.284 ms/op
+                 p0.99:   0.497 ms/op
+                 p0.999:  0.497 ms/op
+                 p0.9999: 0.497 ms/op
+                 p1.00:   0.497 ms/op
+
+Iteration   2: 0.163 ±(99.9%) 0.035 ms/op
+                 p0.00:   0.060 ms/op
+                 p0.50:   0.146 ms/op
+                 p0.90:   0.258 ms/op
+                 p0.95:   0.287 ms/op
+                 p0.99:   0.581 ms/op
+                 p0.999:  0.581 ms/op
+                 p0.9999: 0.581 ms/op
+                 p1.00:   0.581 ms/op
+
+Iteration   3: 0.176 ±(99.9%) 0.047 ms/op
+                 p0.00:   0.056 ms/op
+                 p0.50:   0.141 ms/op
+                 p0.90:   0.284 ms/op
+                 p0.95:   0.368 ms/op
+                 p0.99:   0.728 ms/op
+                 p0.999:  0.728 ms/op
+                 p0.9999: 0.728 ms/op
+                 p1.00:   0.728 ms/op
+
+
+# Run progress: 77.76% complete, ETA 00:00:13
+# Fork: 2 of 3
+# Warmup Iteration   1: 0.163 ±(99.9%) 0.005 ms/op
+# Warmup Iteration   2: 0.168 ±(99.9%) 0.004 ms/op
+Iteration   1: 0.165 ±(99.9%) 0.035 ms/op
+                 p0.00:   0.062 ms/op
+                 p0.50:   0.144 ms/op
+                 p0.90:   0.296 ms/op
+                 p0.95:   0.316 ms/op
+                 p0.99:   0.372 ms/op
+                 p0.999:  0.372 ms/op
+                 p0.9999: 0.372 ms/op
+                 p1.00:   0.372 ms/op
+
+Iteration   2: 0.158 ±(99.9%) 0.036 ms/op
+                 p0.00:   0.077 ms/op
+                 p0.50:   0.130 ms/op
+                 p0.90:   0.287 ms/op
+                 p0.95:   0.357 ms/op
+                 p0.99:   0.429 ms/op
+                 p0.999:  0.429 ms/op
+                 p0.9999: 0.429 ms/op
+                 p1.00:   0.429 ms/op
+
+Iteration   3: 0.165 ±(99.9%) 0.032 ms/op
+                 p0.00:   0.060 ms/op
+                 p0.50:   0.140 ms/op
+                 p0.90:   0.265 ms/op
+                 p0.95:   0.302 ms/op
+                 p0.99:   0.592 ms/op
+                 p0.999:  0.592 ms/op
+                 p0.9999: 0.592 ms/op
+                 p1.00:   0.592 ms/op
+
+
+# Run progress: 88.86% complete, ETA 00:00:06
+# Fork: 3 of 3
+# Warmup Iteration   1: 0.165 ±(99.9%) 0.005 ms/op
+# Warmup Iteration   2: 0.163 ±(99.9%) 0.003 ms/op
+Iteration   1: 0.195 ±(99.9%) 0.055 ms/op
+                 p0.00:   0.090 ms/op
+                 p0.50:   0.147 ms/op
+                 p0.90:   0.353 ms/op
+                 p0.95:   0.523 ms/op
+                 p0.99:   0.607 ms/op
+                 p0.999:  0.607 ms/op
+                 p0.9999: 0.607 ms/op
+                 p1.00:   0.607 ms/op
+
+Iteration   2: 0.164 ±(99.9%) 0.037 ms/op
+                 p0.00:   0.072 ms/op
+                 p0.50:   0.138 ms/op
+                 p0.90:   0.284 ms/op
+                 p0.95:   0.363 ms/op
+                 p0.99:   0.531 ms/op
+                 p0.999:  0.531 ms/op
+                 p0.9999: 0.531 ms/op
+                 p1.00:   0.531 ms/op
+
+Iteration   3: 0.161 ±(99.9%) 0.029 ms/op
+                 p0.00:   0.078 ms/op
+                 p0.50:   0.149 ms/op
+                 p0.90:   0.229 ms/op
+                 p0.95:   0.325 ms/op
+                 p0.99:   0.498 ms/op
+                 p0.999:  0.498 ms/op
+                 p0.9999: 0.498 ms/op
+                 p1.00:   0.498 ms/op
+
+
+
+Result "com.kv.jmh.util.metrics.BestCaseTest.trace":
+  N = 613
+  mean =      0.168 ±(99.9%) 0.012 ms/op
+
+  Histogram, ms/op:
+    [0.000, 0.050) = 0 
+    [0.050, 0.100) = 119 
+    [0.100, 0.150) = 212 
+    [0.150, 0.200) = 124 
+    [0.200, 0.250) = 76 
+    [0.250, 0.300) = 39 
+    [0.300, 0.350) = 18 
+    [0.350, 0.400) = 7 
+    [0.400, 0.450) = 4 
+    [0.450, 0.500) = 5 
+    [0.500, 0.550) = 4 
+    [0.550, 0.600) = 2 
+    [0.600, 0.650) = 1 
+    [0.650, 0.700) = 1 
+    [0.700, 0.750) = 1 
+
+  Percentiles, ms/op:
+      p(0.0000) =      0.056 ms/op
+     p(50.0000) =      0.142 ms/op
+     p(90.0000) =      0.277 ms/op
+     p(95.0000) =      0.323 ms/op
+     p(99.0000) =      0.540 ms/op
+     p(99.9000) =      0.728 ms/op
+     p(99.9900) =      0.728 ms/op
+     p(99.9990) =      0.728 ms/op
+     p(99.9999) =      0.728 ms/op
+    p(100.0000) =      0.728 ms/op
+
+
+# JMH version: 1.37
+# VM version: JDK 22.0.2, OpenJDK 64-Bit Server VM, 22.0.2+9-70
+# VM invoker: C:\Users\reach\.jdks\openjdk-22.0.2\bin\java.exe
+# VM options: -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 3 s each
+# Measurement: 3 iterations, 3 ms each
+# Timeout: 2 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.kv.jmh.util.metrics.BestCaseTest.trace
+
+# Run progress: 99.97% complete, ETA 00:00:00
+# Fork: 1 of 3
+# Warmup Iteration   1: 1.299 ms/op
+# Warmup Iteration   2: 0.143 ms/op
+Iteration   1: 0.094 ms/op
+Iteration   2: 0.107 ms/op
+Iteration   3: 0.181 ms/op
+
+# Run progress: 99.98% complete, ETA 00:00:00
+# Fork: 2 of 3
+# Warmup Iteration   1: 1.116 ms/op
+# Warmup Iteration   2: 0.263 ms/op
+Iteration   1: 0.124 ms/op
+Iteration   2: 0.119 ms/op
+Iteration   3: 0.152 ms/op
+
+# Run progress: 99.99% complete, ETA 00:00:00
+# Fork: 3 of 3
+# Warmup Iteration   1: 1.239 ms/op
+# Warmup Iteration   2: 0.136 ms/op
+Iteration   1: 0.184 ms/op
+Iteration   2: 0.098 ms/op
+Iteration   3: 0.120 ms/op
+
+
+Result "com.kv.jmh.util.metrics.BestCaseTest.trace":
+  N = 9
+  mean =      0.131 ±(99.9%) 0.057 ms/op
+
+  Histogram, ms/op:
+    [0.090, 0.100) = 2 
+    [0.100, 0.110) = 1 
+    [0.110, 0.120) = 2 
+    [0.120, 0.130) = 1 
+    [0.130, 0.140) = 0 
+    [0.140, 0.150) = 0 
+    [0.150, 0.160) = 1 
+    [0.160, 0.170) = 0 
+    [0.170, 0.180) = 0 
+
+  Percentiles, ms/op:
+      p(0.0000) =      0.094 ms/op
+     p(50.0000) =      0.120 ms/op
+     p(90.0000) =      0.184 ms/op
+     p(95.0000) =      0.184 ms/op
+     p(99.0000) =      0.184 ms/op
+     p(99.9000) =      0.184 ms/op
+     p(99.9900) =      0.184 ms/op
+     p(99.9990) =      0.184 ms/op
+     p(99.9999) =      0.184 ms/op
+    p(100.0000) =      0.184 ms/op
+
+
+# Run complete. Total time: 00:00:59
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark                     Mode  Cnt  Score   Error   Units
+BestCaseTest.trace           thrpt    9  6.400 ± 0.368  ops/ms
+BestCaseTest.trace            avgt    9  0.151 ± 0.012   ms/op
+BestCaseTest.trace          sample  613  0.168 ± 0.012   ms/op
+BestCaseTest.trace:p0.00    sample       0.056           ms/op
+BestCaseTest.trace:p0.50    sample       0.142           ms/op
+BestCaseTest.trace:p0.90    sample       0.277           ms/op
+BestCaseTest.trace:p0.95    sample       0.323           ms/op
+BestCaseTest.trace:p0.99    sample       0.540           ms/op
+BestCaseTest.trace:p0.999   sample       0.728           ms/op
+BestCaseTest.trace:p0.9999  sample       0.728           ms/op
+BestCaseTest.trace:p1.00    sample       0.728           ms/op
+BestCaseTest.trace              ss    9  0.131 ± 0.057   ms/op

@@ -2,35 +2,34 @@ package com.kv.jmh.util;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicLong;
 
-public class ListExample {
+public class WorstCaseScenario {
 
     private static final int LIST_SIZE = 1024;
-    private final List<Long> list = new ArrayList<>(LIST_SIZE);
+    private final List<AtomicLong> list = new ArrayList<>(LIST_SIZE);
 
-    public ListExample() {
+    public WorstCaseScenario() {
         for (int i = 0; i < LIST_SIZE; i++) {
-            list.add(0L);
+            list.add(new AtomicLong(0L));
         }
     }
 
-    public void updateList(int index) {
-        list.set(index, list.get(index) + 1);
+    private void updateList(int index) {
+        list.get(index).incrementAndGet(); // Atomic increment
     }
 
-    public static void main(String[] args) {
-        ListExample example = new ListExample();
-
+    public void compute(){
         // Threads updating different parts of the list
         Thread t1 = new Thread(() -> {
             for (int i = 0; i < LIST_SIZE / 2; i++) {
-                example.updateList(i);
+                this.updateList(i);
             }
         });
 
         Thread t2 = new Thread(() -> {
             for (int i = LIST_SIZE / 2; i < LIST_SIZE; i++) {
-                example.updateList(i);
+                this.updateList(i);
             }
         });
 

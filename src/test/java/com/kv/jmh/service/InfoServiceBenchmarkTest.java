@@ -1,5 +1,7 @@
 package com.kv.jmh.service;
 
+import com.kv.jmh.util.metrics.BestCaseTest;
+import com.kv.jmh.util.metrics.WorstCaseTest;
 import org.openjdk.jmh.annotations.*;
 import org.openjdk.jmh.infra.Blackhole;
 import org.openjdk.jmh.runner.Runner;
@@ -27,10 +29,12 @@ public class InfoServiceBenchmarkTest {
         //Main.main(args);
         Options opt = new OptionsBuilder()
                 .include(InfoServiceBenchmarkTest.class.getSimpleName())
+                .exclude(BestCaseTest.class.getSimpleName())
+                .exclude(WorstCaseTest.class.getSimpleName())
                 .output("benchmark-results.txt")
                 .jvmArgs("-Dfile.encoding=UTF-8")
                 .build();
 
-        new Runner(opt).run();
+       // new Runner(opt).run();
     }
 }
