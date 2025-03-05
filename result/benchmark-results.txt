@@ -1,0 +1,331 @@
+# JMH version: 1.37
+# VM version: JDK 22.0.1, OpenJDK 64-Bit Server VM, 22.0.1
+# VM invoker: /opt/homebrew/Cellar/openjdk/22.0.1/libexec/openjdk.jdk/Contents/Home/bin/java
+# VM options: -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 3 s each
+# Measurement: 3 iterations, 3 ms each
+# Timeout: 2 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.kv.jmh.service.InfoServiceBenchmarkTest.getGadgetInfoTest
+
+# Run progress: 0.00% complete, ETA 00:00:54
+# Fork: 1 of 3
+# Warmup Iteration   1: 0.036 ops/ms
+# Warmup Iteration   2: 0.041 ops/ms
+Iteration   1: 0.041 ops/ms
+Iteration   2: 0.040 ops/ms
+Iteration   3: (benchmark timed out, interrupted 1 times) 0.048 ops/ms
+
+# Run progress: 11.11% complete, ETA 00:01:17
+# Fork: 2 of 3
+# Warmup Iteration   1: 0.034 ops/ms
+# Warmup Iteration   2: 0.036 ops/ms
+Iteration   1: 0.039 ops/ms
+Iteration   2: 0.041 ops/ms
+Iteration   3: (benchmark timed out, interrupted 1 times) 0.023 ops/ms
+
+# Run progress: 22.22% complete, ETA 00:01:07
+# Fork: 3 of 3
+# Warmup Iteration   1: 0.034 ops/ms
+# Warmup Iteration   2: 0.017 ops/ms
+Iteration   1: 0.006 ops/ms
+Iteration   2: 0.035 ops/ms
+Iteration   3: (benchmark timed out, interrupted 1 times) 0.007 ops/ms
+
+
+Result "com.kv.jmh.service.InfoServiceBenchmarkTest.getGadgetInfoTest":
+  0.031 ±(99.9%) 0.026 ops/ms [Average]
+  (min, avg, max) = (0.006, 0.031, 0.048), stdev = 0.015
+  CI (99.9%): [0.005, 0.057] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 22.0.1, OpenJDK 64-Bit Server VM, 22.0.1
+# VM invoker: /opt/homebrew/Cellar/openjdk/22.0.1/libexec/openjdk.jdk/Contents/Home/bin/java
+# VM options: -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 3 s each
+# Measurement: 3 iterations, 3 ms each
+# Timeout: 2 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.kv.jmh.service.InfoServiceBenchmarkTest.getGadgetInfoTest
+
+# Run progress: 33.32% complete, ETA 00:00:58
+# Fork: 1 of 3
+# Warmup Iteration   1: 30.640 ms/op
+# Warmup Iteration   2: 28.366 ms/op
+Iteration   1: 28.115 ms/op
+Iteration   2: 39.092 ms/op
+Iteration   3: (benchmark timed out, interrupted 1 times) 23.692 ms/op
+
+# Run progress: 44.43% complete, ETA 00:00:48
+# Fork: 2 of 3
+# Warmup Iteration   1: 26.417 ms/op
+# Warmup Iteration   2: 24.957 ms/op
+Iteration   1: 23.714 ms/op
+Iteration   2: 21.996 ms/op
+Iteration   3: (benchmark timed out, interrupted 1 times) 27.700 ms/op
+
+# Run progress: 55.54% complete, ETA 00:00:38
+# Fork: 3 of 3
+# Warmup Iteration   1: 27.868 ms/op
+# Warmup Iteration   2: 26.718 ms/op
+Iteration   1: 24.805 ms/op
+Iteration   2: 28.318 ms/op
+Iteration   3: (benchmark timed out, interrupted 1 times) 23.308 ms/op
+
+
+Result "com.kv.jmh.service.InfoServiceBenchmarkTest.getGadgetInfoTest":
+  26.749 ±(99.9%) 8.698 ms/op [Average]
+  (min, avg, max) = (21.996, 26.749, 39.092), stdev = 5.176
+  CI (99.9%): [18.051, 35.447] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 22.0.1, OpenJDK 64-Bit Server VM, 22.0.1
+# VM invoker: /opt/homebrew/Cellar/openjdk/22.0.1/libexec/openjdk.jdk/Contents/Home/bin/java
+# VM options: -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 3 s each
+# Measurement: 3 iterations, 3 ms each
+# Timeout: 2 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: com.kv.jmh.service.InfoServiceBenchmarkTest.getGadgetInfoTest
+
+# Run progress: 66.65% complete, ETA 00:00:29
+# Fork: 1 of 3
+# Warmup Iteration   1: 27.861 ±(99.9%) 11.319 ms/op
+# Warmup Iteration   2: 25.525 ±(99.9%) 1.422 ms/op
+Iteration   1: 19.202 ms/op
+                 p0.00:   19.202 ms/op
+                 p0.50:   19.202 ms/op
+                 p0.90:   19.202 ms/op
+                 p0.95:   19.202 ms/op
+                 p0.99:   19.202 ms/op
+                 p0.999:  19.202 ms/op
+                 p0.9999: 19.202 ms/op
+                 p1.00:   19.202 ms/op
+
+Iteration   2: 19.333 ms/op
+                 p0.00:   19.333 ms/op
+                 p0.50:   19.333 ms/op
+                 p0.90:   19.333 ms/op
+                 p0.95:   19.333 ms/op
+                 p0.99:   19.333 ms/op
+                 p0.999:  19.333 ms/op
+                 p0.9999: 19.333 ms/op
+                 p1.00:   19.333 ms/op
+
+Iteration   3: (benchmark timed out, interrupted 1 times) 22.118 ms/op
+                 p0.00:   22.118 ms/op
+                 p0.50:   22.118 ms/op
+                 p0.90:   22.118 ms/op
+                 p0.95:   22.118 ms/op
+                 p0.99:   22.118 ms/op
+                 p0.999:  22.118 ms/op
+                 p0.9999: 22.118 ms/op
+                 p1.00:   22.118 ms/op
+
+
+# Run progress: 77.76% complete, ETA 00:00:19
+# Fork: 2 of 3
+# Warmup Iteration   1: 27.791 ±(99.9%) 10.690 ms/op
+# Warmup Iteration   2: 24.665 ±(99.9%) 1.212 ms/op
+Iteration   1: 23.855 ms/op
+                 p0.00:   23.855 ms/op
+                 p0.50:   23.855 ms/op
+                 p0.90:   23.855 ms/op
+                 p0.95:   23.855 ms/op
+                 p0.99:   23.855 ms/op
+                 p0.999:  23.855 ms/op
+                 p0.9999: 23.855 ms/op
+                 p1.00:   23.855 ms/op
+
+Iteration   2: 20.251 ms/op
+                 p0.00:   20.251 ms/op
+                 p0.50:   20.251 ms/op
+                 p0.90:   20.251 ms/op
+                 p0.95:   20.251 ms/op
+                 p0.99:   20.251 ms/op
+                 p0.999:  20.251 ms/op
+                 p0.9999: 20.251 ms/op
+                 p1.00:   20.251 ms/op
+
+Iteration   3: (benchmark timed out, interrupted 1 times) 22.381 ms/op
+                 p0.00:   22.381 ms/op
+                 p0.50:   22.381 ms/op
+                 p0.90:   22.381 ms/op
+                 p0.95:   22.381 ms/op
+                 p0.99:   22.381 ms/op
+                 p0.999:  22.381 ms/op
+                 p0.9999: 22.381 ms/op
+                 p1.00:   22.381 ms/op
+
+
+# Run progress: 88.86% complete, ETA 00:00:09
+# Fork: 3 of 3
+# Warmup Iteration   1: 30.042 ±(99.9%) 12.096 ms/op
+# Warmup Iteration   2: 26.669 ±(99.9%) 1.189 ms/op
+Iteration   1: 24.805 ms/op
+                 p0.00:   24.805 ms/op
+                 p0.50:   24.805 ms/op
+                 p0.90:   24.805 ms/op
+                 p0.95:   24.805 ms/op
+                 p0.99:   24.805 ms/op
+                 p0.999:  24.805 ms/op
+                 p0.9999: 24.805 ms/op
+                 p1.00:   24.805 ms/op
+
+Iteration   2: 20.939 ms/op
+                 p0.00:   20.939 ms/op
+                 p0.50:   20.939 ms/op
+                 p0.90:   20.939 ms/op
+                 p0.95:   20.939 ms/op
+                 p0.99:   20.939 ms/op
+                 p0.999:  20.939 ms/op
+                 p0.9999: 20.939 ms/op
+                 p1.00:   20.939 ms/op
+
+Iteration   3: (benchmark timed out, interrupted 1 times) 26.378 ms/op
+                 p0.00:   26.378 ms/op
+                 p0.50:   26.378 ms/op
+                 p0.90:   26.378 ms/op
+                 p0.95:   26.378 ms/op
+                 p0.99:   26.378 ms/op
+                 p0.999:  26.378 ms/op
+                 p0.9999: 26.378 ms/op
+                 p1.00:   26.378 ms/op
+
+
+
+Result "com.kv.jmh.service.InfoServiceBenchmarkTest.getGadgetInfoTest":
+  N = 9
+  mean =     22.140 ±(99.9%) 4.184 ms/op
+
+  Histogram, ms/op:
+    [19.000, 19.500) = 2 
+    [19.500, 20.000) = 0 
+    [20.000, 20.500) = 1 
+    [20.500, 21.000) = 1 
+    [21.000, 21.500) = 0 
+    [21.500, 22.000) = 0 
+    [22.000, 22.500) = 2 
+    [22.500, 23.000) = 0 
+    [23.000, 23.500) = 0 
+    [23.500, 24.000) = 1 
+    [24.000, 24.500) = 0 
+    [24.500, 25.000) = 1 
+    [25.000, 25.500) = 0 
+    [25.500, 26.000) = 0 
+    [26.000, 26.500) = 1 
+
+  Percentiles, ms/op:
+      p(0.0000) =     19.202 ms/op
+     p(50.0000) =     22.118 ms/op
+     p(90.0000) =     26.378 ms/op
+     p(95.0000) =     26.378 ms/op
+     p(99.0000) =     26.378 ms/op
+     p(99.9000) =     26.378 ms/op
+     p(99.9900) =     26.378 ms/op
+     p(99.9990) =     26.378 ms/op
+     p(99.9999) =     26.378 ms/op
+    p(100.0000) =     26.378 ms/op
+
+
+# JMH version: 1.37
+# VM version: JDK 22.0.1, OpenJDK 64-Bit Server VM, 22.0.1
+# VM invoker: /opt/homebrew/Cellar/openjdk/22.0.1/libexec/openjdk.jdk/Contents/Home/bin/java
+# VM options: -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 3 s each
+# Measurement: 3 iterations, 3 ms each
+# Timeout: 2 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.kv.jmh.service.InfoServiceBenchmarkTest.getGadgetInfoTest
+
+# Run progress: 99.97% complete, ETA 00:00:00
+# Fork: 1 of 3
+# Warmup Iteration   1: 390.124 ms/op
+# Warmup Iteration   2: 33.961 ms/op
+Iteration   1: 27.283 ms/op
+Iteration   2: 23.377 ms/op
+Iteration   3: (benchmark timed out, interrupted 1 times) 26.050 ms/op
+
+# Run progress: 99.98% complete, ETA 00:00:00
+# Fork: 2 of 3
+# Warmup Iteration   1: 389.463 ms/op
+# Warmup Iteration   2: 32.246 ms/op
+Iteration   1: 26.890 ms/op
+Iteration   2: 31.498 ms/op
+Iteration   3: (benchmark timed out, interrupted 1 times) 22.984 ms/op
+
+# Run progress: 99.99% complete, ETA 00:00:00
+# Fork: 3 of 3
+# Warmup Iteration   1: 368.379 ms/op
+# Warmup Iteration   2: 25.992 ms/op
+Iteration   1: 27.202 ms/op
+Iteration   2: 26.630 ms/op
+Iteration   3: (benchmark timed out, interrupted 1 times) 21.840 ms/op
+
+
+Result "com.kv.jmh.service.InfoServiceBenchmarkTest.getGadgetInfoTest":
+  N = 9
+  mean =     25.973 ±(99.9%) 4.891 ms/op
+
+  Histogram, ms/op:
+    [21.000, 22.000) = 1 
+    [22.000, 23.000) = 1 
+    [23.000, 24.000) = 1 
+    [24.000, 25.000) = 0 
+    [25.000, 26.000) = 0 
+    [26.000, 27.000) = 3 
+    [27.000, 28.000) = 2 
+    [28.000, 29.000) = 0 
+    [29.000, 30.000) = 0 
+    [30.000, 31.000) = 0 
+
+  Percentiles, ms/op:
+      p(0.0000) =     21.840 ms/op
+     p(50.0000) =     26.630 ms/op
+     p(90.0000) =     31.498 ms/op
+     p(95.0000) =     31.498 ms/op
+     p(99.0000) =     31.498 ms/op
+     p(99.9000) =     31.498 ms/op
+     p(99.9900) =     31.498 ms/op
+     p(99.9990) =     31.498 ms/op
+     p(99.9999) =     31.498 ms/op
+    p(100.0000) =     31.498 ms/op
+
+
+# Run complete. Total time: 00:01:38
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark                                             Mode  Cnt   Score   Error   Units
+InfoServiceBenchmarkTest.getGadgetInfoTest           thrpt    9   0.031 ± 0.026  ops/ms
+InfoServiceBenchmarkTest.getGadgetInfoTest            avgt    9  26.749 ± 8.698   ms/op
+InfoServiceBenchmarkTest.getGadgetInfoTest          sample    9  22.140 ± 4.184   ms/op
+InfoServiceBenchmarkTest.getGadgetInfoTest:p0.00    sample       19.202           ms/op
+InfoServiceBenchmarkTest.getGadgetInfoTest:p0.50    sample       22.118           ms/op
+InfoServiceBenchmarkTest.getGadgetInfoTest:p0.90    sample       26.378           ms/op
+InfoServiceBenchmarkTest.getGadgetInfoTest:p0.95    sample       26.378           ms/op
+InfoServiceBenchmarkTest.getGadgetInfoTest:p0.99    sample       26.378           ms/op
+InfoServiceBenchmarkTest.getGadgetInfoTest:p0.999   sample       26.378           ms/op
+InfoServiceBenchmarkTest.getGadgetInfoTest:p0.9999  sample       26.378           ms/op
+InfoServiceBenchmarkTest.getGadgetInfoTest:p1.00    sample       26.378           ms/op
+InfoServiceBenchmarkTest.getGadgetInfoTest              ss    9  25.973 ± 4.891   ms/op

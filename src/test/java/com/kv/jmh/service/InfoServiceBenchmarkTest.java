@@ -2,9 +2,11 @@ package com.kv.jmh.service;
 
 import com.kv.jmh.util.metrics.RunWithArrayTest;
 import com.kv.jmh.util.metrics.RunWithListTest;
+import com.kv.jmh.util.metrics.RunWithOutPadTest;
 import com.kv.jmh.util.metrics.RunWithPadTest;
 import org.openjdk.jmh.annotations.*;
 import org.openjdk.jmh.infra.Blackhole;
+import org.openjdk.jmh.runner.Runner;
 import org.openjdk.jmh.runner.options.Options;
 import org.openjdk.jmh.runner.options.OptionsBuilder;
 
@@ -29,13 +31,14 @@ public class InfoServiceBenchmarkTest {
         //Main.main(args);
         Options opt = new OptionsBuilder()
                 .include(InfoServiceBenchmarkTest.class.getSimpleName()) // Specify the benchmark class
+                .exclude(RunWithOutPadTest.class.getSimpleName()) // Exclude other benchmarks
                 .exclude(RunWithArrayTest.class.getSimpleName()) // Exclude other benchmarks
                 .exclude(RunWithListTest.class.getSimpleName()) // Exclude other benchmarks
                 .exclude(RunWithPadTest.class.getSimpleName()) // Exclude other benchmarks
-                .output("benchmark-results.txt")
+                .output("result/benchmark-results.txt")
                 .jvmArgs("-Dfile.encoding=UTF-8")
                 .build();
 
-       // new Runner(opt).run();
+        new Runner(opt).run();
     }
 }

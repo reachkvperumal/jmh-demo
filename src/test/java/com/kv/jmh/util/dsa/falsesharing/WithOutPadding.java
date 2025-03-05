@@ -1,15 +1,14 @@
 package com.kv.jmh.util.dsa.falsesharing;
 
-import com.kv.jmh.util.dsa.model.PaddedAtomicCounter;
+import com.kv.jmh.util.dsa.model.NonPaddedAtomicCounter;
 
-public class WithPadding {
+public class WithOutPadding {
+    static class NonPaddedThreads extends Thread {
 
-    static class PaddedThreads extends Thread {
-
-        private final PaddedAtomicCounter counter;
+        private final NonPaddedAtomicCounter counter;
         private final int iterationCount;
 
-        public PaddedThreads(PaddedAtomicCounter counter, int iterationCount) {
+        public NonPaddedThreads(NonPaddedAtomicCounter counter, int iterationCount) {
             this.counter = counter;
             this.iterationCount = iterationCount;
         }
@@ -23,21 +22,23 @@ public class WithPadding {
     }
 
     public long compute(int threadCount, int iterationCount) {
-        PaddedAtomicCounter counter = new PaddedAtomicCounter();
-        PaddedThreads[] paddedThreads = new PaddedThreads[threadCount];
+        NonPaddedAtomicCounter counter = new NonPaddedAtomicCounter();
+        NonPaddedThreads[] nonPaddedThreads = new NonPaddedThreads[threadCount];
 
         for (int i = 0; i < threadCount; i++) {
-            paddedThreads[i] = new PaddedThreads(counter, iterationCount);
-            paddedThreads[i].start();
+            nonPaddedThreads[i] = new NonPaddedThreads(counter, iterationCount);
+            nonPaddedThreads[i].start();
         }
 
-        for (PaddedThreads thread : paddedThreads) {
+        for (NonPaddedThreads thread : nonPaddedThreads) {
             try {
                 thread.join();
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
         }
+
+
         long counterValue = counter.getCounterValue();
         System.out.printf("Actual Count: %d - Expected Count: %d%n ", counterValue, threadCount * iterationCount);
         return counterValue;

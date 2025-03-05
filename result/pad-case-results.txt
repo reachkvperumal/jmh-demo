@@ -1,0 +1,328 @@
+# JMH version: 1.37
+# VM version: JDK 22.0.1, OpenJDK 64-Bit Server VM, 22.0.1
+# VM invoker: /opt/homebrew/Cellar/openjdk/22.0.1/libexec/openjdk.jdk/Contents/Home/bin/java
+# VM options: -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 3 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.kv.jmh.util.metrics.RunWithPadTest.trace
+
+# Run progress: 0.00% complete, ETA 00:05:24
+# Fork: 1 of 3
+# Warmup Iteration   1: 0.017 ops/ms
+# Warmup Iteration   2: 0.016 ops/ms
+Iteration   1: 0.016 ops/ms
+Iteration   2: 0.017 ops/ms
+Iteration   3: 0.017 ops/ms
+
+# Run progress: 11.11% complete, ETA 00:04:51
+# Fork: 2 of 3
+# Warmup Iteration   1: 0.017 ops/ms
+# Warmup Iteration   2: 0.017 ops/ms
+Iteration   1: 0.017 ops/ms
+Iteration   2: 0.017 ops/ms
+Iteration   3: 0.018 ops/ms
+
+# Run progress: 22.22% complete, ETA 00:04:15
+# Fork: 3 of 3
+# Warmup Iteration   1: 0.017 ops/ms
+# Warmup Iteration   2: 0.017 ops/ms
+Iteration   1: 0.017 ops/ms
+Iteration   2: 0.017 ops/ms
+Iteration   3: 0.018 ops/ms
+
+
+Result "com.kv.jmh.util.metrics.RunWithPadTest.trace":
+  0.017 ±(99.9%) 0.001 ops/ms [Average]
+  (min, avg, max) = (0.016, 0.017, 0.018), stdev = 0.001
+  CI (99.9%): [0.017, 0.018] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 22.0.1, OpenJDK 64-Bit Server VM, 22.0.1
+# VM invoker: /opt/homebrew/Cellar/openjdk/22.0.1/libexec/openjdk.jdk/Contents/Home/bin/java
+# VM options: -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 3 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.kv.jmh.util.metrics.RunWithPadTest.trace
+
+# Run progress: 33.33% complete, ETA 00:03:38
+# Fork: 1 of 3
+# Warmup Iteration   1: 58.959 ms/op
+# Warmup Iteration   2: 58.237 ms/op
+Iteration   1: 57.408 ms/op
+Iteration   2: 57.877 ms/op
+Iteration   3: 56.583 ms/op
+
+# Run progress: 44.44% complete, ETA 00:03:01
+# Fork: 2 of 3
+# Warmup Iteration   1: 58.481 ms/op
+# Warmup Iteration   2: 59.710 ms/op
+Iteration   1: 58.169 ms/op
+Iteration   2: 56.855 ms/op
+Iteration   3: 57.850 ms/op
+
+# Run progress: 55.55% complete, ETA 00:02:25
+# Fork: 3 of 3
+# Warmup Iteration   1: 58.358 ms/op
+# Warmup Iteration   2: 59.080 ms/op
+Iteration   1: 57.575 ms/op
+Iteration   2: 57.579 ms/op
+Iteration   3: 57.577 ms/op
+
+
+Result "com.kv.jmh.util.metrics.RunWithPadTest.trace":
+  57.497 ±(99.9%) 0.839 ms/op [Average]
+  (min, avg, max) = (56.583, 57.497, 58.169), stdev = 0.499
+  CI (99.9%): [56.658, 58.336] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 22.0.1, OpenJDK 64-Bit Server VM, 22.0.1
+# VM invoker: /opt/homebrew/Cellar/openjdk/22.0.1/libexec/openjdk.jdk/Contents/Home/bin/java
+# VM options: -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 3 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: com.kv.jmh.util.metrics.RunWithPadTest.trace
+
+# Run progress: 66.66% complete, ETA 00:01:49
+# Fork: 1 of 3
+# Warmup Iteration   1: 63.849 ±(99.9%) 5.596 ms/op
+# Warmup Iteration   2: 69.245 ±(99.9%) 4.405 ms/op
+Iteration   1: 59.766 ±(99.9%) 2.131 ms/op
+                 p0.00:   46.203 ms/op
+                 p0.50:   57.868 ms/op
+                 p0.90:   71.723 ms/op
+                 p0.95:   73.138 ms/op
+                 p0.99:   87.931 ms/op
+                 p0.999:  88.474 ms/op
+                 p0.9999: 88.474 ms/op
+                 p1.00:   88.474 ms/op
+
+Iteration   2: 65.233 ±(99.9%) 2.680 ms/op
+                 p0.00:   46.399 ms/op
+                 p0.50:   65.405 ms/op
+                 p0.90:   77.529 ms/op
+                 p0.95:   81.297 ms/op
+                 p0.99:   89.208 ms/op
+                 p0.999:  89.784 ms/op
+                 p0.9999: 89.784 ms/op
+                 p1.00:   89.784 ms/op
+
+Iteration   3: 66.460 ±(99.9%) 2.818 ms/op
+                 p0.00:   42.271 ms/op
+                 p0.50:   68.026 ms/op
+                 p0.90:   78.591 ms/op
+                 p0.95:   83.178 ms/op
+                 p0.99:   89.832 ms/op
+                 p0.999:  90.309 ms/op
+                 p0.9999: 90.309 ms/op
+                 p1.00:   90.309 ms/op
+
+
+# Run progress: 77.77% complete, ETA 00:01:12
+# Fork: 2 of 3
+# Warmup Iteration   1: 70.498 ±(99.9%) 5.348 ms/op
+# Warmup Iteration   2: 64.607 ±(99.9%) 4.919 ms/op
+Iteration   1: 56.187 ±(99.9%) 2.073 ms/op
+                 p0.00:   43.319 ms/op
+                 p0.50:   53.936 ms/op
+                 p0.90:   69.481 ms/op
+                 p0.95:   75.032 ms/op
+                 p0.99:   81.844 ms/op
+                 p0.999:  82.051 ms/op
+                 p0.9999: 82.051 ms/op
+                 p1.00:   82.051 ms/op
+
+Iteration   2: 50.924 ±(99.9%) 0.924 ms/op
+                 p0.00:   41.878 ms/op
+                 p0.50:   50.528 ms/op
+                 p0.90:   55.391 ms/op
+                 p0.95:   58.406 ms/op
+                 p0.99:   61.441 ms/op
+                 p0.999:  63.111 ms/op
+                 p0.9999: 63.111 ms/op
+                 p1.00:   63.111 ms/op
+
+Iteration   3: 50.746 ±(99.9%) 0.835 ms/op
+                 p0.00:   42.402 ms/op
+                 p0.50:   50.627 ms/op
+                 p0.90:   54.926 ms/op
+                 p0.95:   55.840 ms/op
+                 p0.99:   61.085 ms/op
+                 p0.999:  61.669 ms/op
+                 p0.9999: 61.669 ms/op
+                 p1.00:   61.669 ms/op
+
+
+# Run progress: 88.88% complete, ETA 00:00:36
+# Fork: 3 of 3
+# Warmup Iteration   1: 53.086 ±(99.9%) 2.990 ms/op
+# Warmup Iteration   2: 52.442 ±(99.9%) 1.736 ms/op
+Iteration   1: 53.331 ±(99.9%) 1.575 ms/op
+                 p0.00:   41.878 ms/op
+                 p0.50:   52.494 ms/op
+                 p0.90:   60.097 ms/op
+                 p0.95:   66.680 ms/op
+                 p0.99:   78.361 ms/op
+                 p0.999:  82.444 ms/op
+                 p0.9999: 82.444 ms/op
+                 p1.00:   82.444 ms/op
+
+Iteration   2: 53.271 ±(99.9%) 1.350 ms/op
+                 p0.00:   45.548 ms/op
+                 p0.50:   52.134 ms/op
+                 p0.90:   58.884 ms/op
+                 p0.95:   62.004 ms/op
+                 p0.99:   81.291 ms/op
+                 p0.999:  83.624 ms/op
+                 p0.9999: 83.624 ms/op
+                 p1.00:   83.624 ms/op
+
+Iteration   3: 64.308 ±(99.9%) 2.971 ms/op
+                 p0.00:   42.402 ms/op
+                 p0.50:   65.143 ms/op
+                 p0.90:   78.499 ms/op
+                 p0.95:   80.563 ms/op
+                 p0.99:   86.605 ms/op
+                 p0.999:  87.949 ms/op
+                 p0.9999: 87.949 ms/op
+                 p1.00:   87.949 ms/op
+
+
+
+Result "com.kv.jmh.util.metrics.RunWithPadTest.trace":
+  N = 1578
+  mean =     57.209 ±(99.9%) 0.799 ms/op
+
+  Histogram, ms/op:
+    [ 40.000,  45.000) = 31 
+    [ 45.000,  50.000) = 299 
+    [ 50.000,  55.000) = 561 
+    [ 55.000,  60.000) = 224 
+    [ 60.000,  65.000) = 113 
+    [ 65.000,  70.000) = 142 
+    [ 70.000,  75.000) = 104 
+    [ 75.000,  80.000) = 63 
+    [ 80.000,  85.000) = 28 
+    [ 85.000,  90.000) = 12 
+    [ 90.000,  95.000) = 1 
+
+  Percentiles, ms/op:
+      p(0.0000) =     41.878 ms/op
+     p(50.0000) =     54.133 ms/op
+     p(90.0000) =     72.483 ms/op
+     p(95.0000) =     76.546 ms/op
+     p(99.0000) =     83.920 ms/op
+     p(99.9000) =     90.005 ms/op
+     p(99.9900) =     90.309 ms/op
+     p(99.9990) =     90.309 ms/op
+     p(99.9999) =     90.309 ms/op
+    p(100.0000) =     90.309 ms/op
+
+
+# JMH version: 1.37
+# VM version: JDK 22.0.1, OpenJDK 64-Bit Server VM, 22.0.1
+# VM invoker: /opt/homebrew/Cellar/openjdk/22.0.1/libexec/openjdk.jdk/Contents/Home/bin/java
+# VM options: -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 3 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.kv.jmh.util.metrics.RunWithPadTest.trace
+
+# Run progress: 100.00% complete, ETA 00:00:00
+# Fork: 1 of 3
+# Warmup Iteration   1: 75.645 ms/op
+# Warmup Iteration   2: 56.147 ms/op
+Iteration   1: 56.057 ms/op
+Iteration   2: 69.960 ms/op
+Iteration   3: 68.727 ms/op
+
+# Run progress: 100.00% complete, ETA 00:00:00
+# Fork: 2 of 3
+# Warmup Iteration   1: 89.310 ms/op
+# Warmup Iteration   2: 58.796 ms/op
+Iteration   1: 54.020 ms/op
+Iteration   2: 50.426 ms/op
+Iteration   3: 50.343 ms/op
+
+# Run progress: 100.00% complete, ETA 00:00:00
+# Fork: 3 of 3
+# Warmup Iteration   1: 85.010 ms/op
+# Warmup Iteration   2: 54.467 ms/op
+Iteration   1: 63.784 ms/op
+Iteration   2: 76.965 ms/op
+Iteration   3: 69.307 ms/op
+
+
+Result "com.kv.jmh.util.metrics.RunWithPadTest.trace":
+  N = 9
+  mean =     62.177 ±(99.9%) 16.354 ms/op
+
+  Histogram, ms/op:
+    [50.000, 52.500) = 2 
+    [52.500, 55.000) = 1 
+    [55.000, 57.500) = 1 
+    [57.500, 60.000) = 0 
+    [60.000, 62.500) = 0 
+    [62.500, 65.000) = 1 
+    [65.000, 67.500) = 0 
+    [67.500, 70.000) = 3 
+    [70.000, 72.500) = 0 
+    [72.500, 75.000) = 0 
+    [75.000, 77.500) = 1 
+
+  Percentiles, ms/op:
+      p(0.0000) =     50.343 ms/op
+     p(50.0000) =     63.784 ms/op
+     p(90.0000) =     76.965 ms/op
+     p(95.0000) =     76.965 ms/op
+     p(99.0000) =     76.965 ms/op
+     p(99.9000) =     76.965 ms/op
+     p(99.9900) =     76.965 ms/op
+     p(99.9990) =     76.965 ms/op
+     p(99.9999) =     76.965 ms/op
+    p(100.0000) =     76.965 ms/op
+
+
+# Run complete. Total time: 00:05:29
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark                       Mode   Cnt   Score    Error   Units
+RunWithPadTest.trace           thrpt     9   0.017 ±  0.001  ops/ms
+RunWithPadTest.trace            avgt     9  57.497 ±  0.839   ms/op
+RunWithPadTest.trace          sample  1578  57.209 ±  0.799   ms/op
+RunWithPadTest.trace:p0.00    sample        41.878            ms/op
+RunWithPadTest.trace:p0.50    sample        54.133            ms/op
+RunWithPadTest.trace:p0.90    sample        72.483            ms/op
+RunWithPadTest.trace:p0.95    sample        76.546            ms/op
+RunWithPadTest.trace:p0.99    sample        83.920            ms/op
+RunWithPadTest.trace:p0.999   sample        90.005            ms/op
+RunWithPadTest.trace:p0.9999  sample        90.309            ms/op
+RunWithPadTest.trace:p1.00    sample        90.309            ms/op
+RunWithPadTest.trace              ss     9  62.177 ± 16.354   ms/op

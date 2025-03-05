@@ -18,7 +18,7 @@ public class RunWithArrayTest {
     @Benchmark
     @Fork(3)
     @Measurement(iterations = 3, time = 3, timeUnit = TimeUnit.MILLISECONDS)
-    @Timeout(time = 2, timeUnit = TimeUnit.SECONDS)
+  //  @Timeout(time = 2, timeUnit = TimeUnit.SECONDS)
     public void trace(Blackhole blackhole){
         ExecuteWithArrays executeWithArrays = new ExecuteWithArrays();
         blackhole.consume(executeWithArrays.compute());
@@ -33,10 +33,11 @@ public class RunWithArrayTest {
 
         Options options = new OptionsBuilder()
                 .include(RunWithArrayTest.class.getSimpleName()) // Specify the benchmark class
+                .exclude(RunWithOutPadTest.class.getSimpleName()) // Exclude other benchmarks
                 .exclude(InfoServiceBenchmarkTest.class.getSimpleName()) // Exclude other benchmarks
                 .exclude(RunWithListTest.class.getSimpleName()) // Exclude other benchmarks
                 .exclude(RunWithPadTest.class.getSimpleName()) // Exclude other benchmarks
-                .output("best-case-results.txt")
+                .output("result/best-case-results.txt")
                 .jvmArgs("-Dfile.encoding=UTF-8")
                 .build();
 

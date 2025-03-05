@@ -273,4 +273,4 @@ __Following are my results from the run__
 > - Error: The margin of error or confidence interval for the score.  
 > - Units: The unit of measurement for the score.
 > 
-> Link to [benchmark-results.txt](benchmark-results.txt)
+> Link to [benchmark-results.txt](/result/best-case-results.txt)
