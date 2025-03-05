@@ -8,7 +8,7 @@
 # Timeout: 2 s per iteration, ***WARNING: The timeout might be too low!***
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Throughput, ops/time
-# Benchmark: com.kv.jmh.util.metrics.WorstCaseTest.trace
+# Benchmark: com.kv.jmh.util.metrics.RunWithListTest.trace
 
 # Run progress: 0.00% complete, ETA 00:00:54
 # Fork: 1 of 3
@@ -35,7 +35,7 @@ Iteration   2: 6.291 ops/ms
 Iteration   3: 6.462 ops/ms
 
 
-Result "com.kv.jmh.util.metrics.WorstCaseTest.trace":
+Result "com.kv.jmh.util.metrics.RunWithListTest.trace":
   6.643 ±(99.9%) 0.414 ops/ms [Average]
   (min, avg, max) = (6.291, 6.643, 6.946), stdev = 0.246
   CI (99.9%): [6.229, 7.057] (assumes normal distribution)
@@ -51,7 +51,7 @@ Result "com.kv.jmh.util.metrics.WorstCaseTest.trace":
 # Timeout: 2 s per iteration, ***WARNING: The timeout might be too low!***
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: com.kv.jmh.util.metrics.WorstCaseTest.trace
+# Benchmark: com.kv.jmh.util.metrics.RunWithListTest.trace
 
 # Run progress: 33.32% complete, ETA 00:00:39
 # Fork: 1 of 3
@@ -78,7 +78,7 @@ Iteration   2: 0.153 ms/op
 Iteration   3: 0.147 ms/op
 
 
-Result "com.kv.jmh.util.metrics.WorstCaseTest.trace":
+Result "com.kv.jmh.util.metrics.RunWithListTest.trace":
   0.152 ±(99.9%) 0.005 ms/op [Average]
   (min, avg, max) = (0.147, 0.152, 0.156), stdev = 0.003
   CI (99.9%): [0.147, 0.157] (assumes normal distribution)
@@ -94,7 +94,7 @@ Result "com.kv.jmh.util.metrics.WorstCaseTest.trace":
 # Timeout: 2 s per iteration, ***WARNING: The timeout might be too low!***
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Sampling time
-# Benchmark: com.kv.jmh.util.metrics.WorstCaseTest.trace
+# Benchmark: com.kv.jmh.util.metrics.RunWithListTest.trace
 
 # Run progress: 66.65% complete, ETA 00:00:19
 # Fork: 1 of 3
@@ -202,7 +202,7 @@ Iteration   3: 0.156 ±(99.9%) 0.033 ms/op
 
 
 
-Result "com.kv.jmh.util.metrics.WorstCaseTest.trace":
+Result "com.kv.jmh.util.metrics.RunWithListTest.trace":
   N = 633
   mean =      0.162 ±(99.9%) 0.011 ms/op
 
@@ -243,7 +243,7 @@ Result "com.kv.jmh.util.metrics.WorstCaseTest.trace":
 # Timeout: 2 s per iteration, ***WARNING: The timeout might be too low!***
 # Threads: 1 thread
 # Benchmark mode: Single shot invocation time
-# Benchmark: com.kv.jmh.util.metrics.WorstCaseTest.trace
+# Benchmark: com.kv.jmh.util.metrics.RunWithListTest.trace
 
 # Run progress: 99.97% complete, ETA 00:00:00
 # Fork: 1 of 3
@@ -270,7 +270,7 @@ Iteration   2: 0.107 ms/op
 Iteration   3: 0.107 ms/op
 
 
-Result "com.kv.jmh.util.metrics.WorstCaseTest.trace":
+Result "com.kv.jmh.util.metrics.RunWithListTest.trace":
   N = 9
   mean =      0.121 ±(99.9%) 0.040 ms/op
 

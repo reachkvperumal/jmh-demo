@@ -1,10 +1,10 @@
 package com.kv.jmh.service;
 
-import com.kv.jmh.util.metrics.BestCaseTest;
-import com.kv.jmh.util.metrics.WorstCaseTest;
+import com.kv.jmh.util.metrics.RunWithArrayTest;
+import com.kv.jmh.util.metrics.RunWithListTest;
+import com.kv.jmh.util.metrics.RunWithPadTest;
 import org.openjdk.jmh.annotations.*;
 import org.openjdk.jmh.infra.Blackhole;
-import org.openjdk.jmh.runner.Runner;
 import org.openjdk.jmh.runner.options.Options;
 import org.openjdk.jmh.runner.options.OptionsBuilder;
 
@@ -28,9 +28,10 @@ public class InfoServiceBenchmarkTest {
     public static void main(String[] args) throws Exception {
         //Main.main(args);
         Options opt = new OptionsBuilder()
-                .include(InfoServiceBenchmarkTest.class.getSimpleName())
-                .exclude(BestCaseTest.class.getSimpleName())
-                .exclude(WorstCaseTest.class.getSimpleName())
+                .include(InfoServiceBenchmarkTest.class.getSimpleName()) // Specify the benchmark class
+                .exclude(RunWithArrayTest.class.getSimpleName()) // Exclude other benchmarks
+                .exclude(RunWithListTest.class.getSimpleName()) // Exclude other benchmarks
+                .exclude(RunWithPadTest.class.getSimpleName()) // Exclude other benchmarks
                 .output("benchmark-results.txt")
                 .jvmArgs("-Dfile.encoding=UTF-8")
                 .build();

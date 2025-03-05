@@ -8,7 +8,7 @@
 # Timeout: 2 s per iteration, ***WARNING: The timeout might be too low!***
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Throughput, ops/time
-# Benchmark: com.kv.jmh.util.metrics.BestCaseTest.trace
+# Benchmark: com.kv.jmh.util.metrics.RunWithArrayTest.trace
 
 # Run progress: 0.00% complete, ETA 00:00:54
 # Fork: 1 of 3
@@ -35,7 +35,7 @@ Iteration   2: 6.264 ops/ms
 Iteration   3: 6.017 ops/ms
 
 
-Result "com.kv.jmh.util.metrics.BestCaseTest.trace":
+Result "com.kv.jmh.util.metrics.RunWithArrayTest.trace":
   6.400 ±(99.9%) 0.368 ops/ms [Average]
   (min, avg, max) = (6.017, 6.400, 6.692), stdev = 0.219
   CI (99.9%): [6.033, 6.768] (assumes normal distribution)
@@ -51,7 +51,7 @@ Result "com.kv.jmh.util.metrics.BestCaseTest.trace":
 # Timeout: 2 s per iteration, ***WARNING: The timeout might be too low!***
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: com.kv.jmh.util.metrics.BestCaseTest.trace
+# Benchmark: com.kv.jmh.util.metrics.RunWithArrayTest.trace
 
 # Run progress: 33.32% complete, ETA 00:00:39
 # Fork: 1 of 3
@@ -78,7 +78,7 @@ Iteration   2: 0.153 ms/op
 Iteration   3: 0.146 ms/op
 
 
-Result "com.kv.jmh.util.metrics.BestCaseTest.trace":
+Result "com.kv.jmh.util.metrics.RunWithArrayTest.trace":
   0.151 ±(99.9%) 0.012 ms/op [Average]
   (min, avg, max) = (0.144, 0.151, 0.164), stdev = 0.007
   CI (99.9%): [0.139, 0.163] (assumes normal distribution)
@@ -94,7 +94,7 @@ Result "com.kv.jmh.util.metrics.BestCaseTest.trace":
 # Timeout: 2 s per iteration, ***WARNING: The timeout might be too low!***
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Sampling time
-# Benchmark: com.kv.jmh.util.metrics.BestCaseTest.trace
+# Benchmark: com.kv.jmh.util.metrics.RunWithArrayTest.trace
 
 # Run progress: 66.65% complete, ETA 00:00:19
 # Fork: 1 of 3
@@ -202,7 +202,7 @@ Iteration   3: 0.161 ±(99.9%) 0.029 ms/op
 
 
 
-Result "com.kv.jmh.util.metrics.BestCaseTest.trace":
+Result "com.kv.jmh.util.metrics.RunWithArrayTest.trace":
   N = 613
   mean =      0.168 ±(99.9%) 0.012 ms/op
 
@@ -246,7 +246,7 @@ Result "com.kv.jmh.util.metrics.BestCaseTest.trace":
 # Timeout: 2 s per iteration, ***WARNING: The timeout might be too low!***
 # Threads: 1 thread
 # Benchmark mode: Single shot invocation time
-# Benchmark: com.kv.jmh.util.metrics.BestCaseTest.trace
+# Benchmark: com.kv.jmh.util.metrics.RunWithArrayTest.trace
 
 # Run progress: 99.97% complete, ETA 00:00:00
 # Fork: 1 of 3
@@ -273,7 +273,7 @@ Iteration   2: 0.098 ms/op
 Iteration   3: 0.120 ms/op
 
 
-Result "com.kv.jmh.util.metrics.BestCaseTest.trace":
+Result "com.kv.jmh.util.metrics.RunWithArrayTest.trace":
   N = 9
   mean =      0.131 ±(99.9%) 0.057 ms/op
 

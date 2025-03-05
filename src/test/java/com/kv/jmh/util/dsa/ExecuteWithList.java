@@ -1,15 +1,15 @@
-package com.kv.jmh.util;
+package com.kv.jmh.util.dsa;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
 
-public class WorstCaseScenario {
+public class ExecuteWithList {
 
     private static final int LIST_SIZE = 1024;
     private final List<AtomicLong> list = new ArrayList<>(LIST_SIZE);
 
-    public WorstCaseScenario() {
+    public ExecuteWithList() {
         for (int i = 0; i < LIST_SIZE; i++) {
             list.add(new AtomicLong(0L));
         }
@@ -19,7 +19,7 @@ public class WorstCaseScenario {
         list.get(index).incrementAndGet(); // Atomic increment
     }
 
-    public void compute(){
+    public int compute(){
         // Threads updating different parts of the list
         Thread t1 = new Thread(() -> {
             for (int i = 0; i < LIST_SIZE / 2; i++) {
@@ -35,6 +35,7 @@ public class WorstCaseScenario {
 
         t1.start();
         t2.start();
+        return LIST_SIZE;
     }
 }
 

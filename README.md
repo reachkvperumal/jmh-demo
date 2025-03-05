@@ -13,15 +13,15 @@ Use JMH to measure metrics
 2. ### Superclass and Subclass Fields
    - In a class hierarchy, a subclass inherits fields from its superclass. For example:
    ```java
-class Superclass {
-int a;
-int b;
-}
-
-class Subclass extends Superclass {
-int c;
-int d;
-}
+   class Superclass {
+       int a;
+       int b;
+   }
+   
+   class Subclass extends Superclass {
+       int c;
+       int d;
+   }
 ```
   - Here, Subclass inherits fields a and b from Superclass and adds its own fields c and d.
 ```

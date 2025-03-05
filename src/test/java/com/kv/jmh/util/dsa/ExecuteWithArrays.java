@@ -1,8 +1,8 @@
-package com.kv.jmh.util;
+package com.kv.jmh.util.dsa;
 
 import java.util.concurrent.atomic.AtomicLongArray;
 
-public class BestCaseScenario {
+public class ExecuteWithArrays {
 
     private static final int ARRAY_SIZE = 1024;
     private final AtomicLongArray array = new AtomicLongArray(ARRAY_SIZE);
