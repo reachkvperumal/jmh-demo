@@ -147,6 +147,16 @@ public class FalseSharingExample {
     }
 }
 ```
+### Key Differences Between Scopes
+
+| Scope | Instances Created | Shared Between | Thread Safety Required? | Typical Use Case |
+|---------------|---------------------------|-------------------------|-------------------------|-----------------------------------|
+| `Benchmark` | 1 per benchmark | All threads | Yes | Shared resources, global state |
+| `Thread` | 1 per thread | No sharing | No | Independent thread-local state |
+| `Group` | 1 per group | Threads in the group | Yes | Producer-consumer, group dynamics |
+
+---
+
 - In benchmarkFalseSharing, value1 and value2 might reside on the same cache line, causing false sharing.
 - In benchmarkNoFalseSharing, the state is isolated in local variables, avoiding false sharing.
  
