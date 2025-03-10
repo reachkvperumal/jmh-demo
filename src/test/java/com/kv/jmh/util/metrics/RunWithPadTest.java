@@ -4,6 +4,7 @@ import com.kv.jmh.service.InfoServiceBenchmarkTest;
 import com.kv.jmh.util.dsa.falsesharing.WithPadding;
 import org.openjdk.jmh.annotations.*;
 import org.openjdk.jmh.infra.Blackhole;
+import org.openjdk.jmh.profile.GCProfiler;
 import org.openjdk.jmh.runner.Runner;
 import org.openjdk.jmh.runner.options.Options;
 import org.openjdk.jmh.runner.options.OptionsBuilder;
@@ -27,6 +28,7 @@ public class RunWithPadTest {
     public static void main(String[] args) throws Exception {
         Options options = new OptionsBuilder()
                 .include(RunWithPadTest.class.getSimpleName()) // Specify the benchmark class
+                .addProfiler(GCProfiler.class) // Monitor the Garbage Collector
                 .exclude(RunWithOutPadTest.class.getSimpleName()) // Exclude other benchmarks
                 .exclude(RunWithArrayTest.class.getSimpleName())  // Exclude other benchmarks
                 .exclude(InfoServiceBenchmarkTest.class.getSimpleName()) // Exclude other benchmarks

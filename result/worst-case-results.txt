@@ -12,33 +12,82 @@
 
 # Run progress: 0.00% complete, ETA 00:00:54
 # Fork: 1 of 3
-# Warmup Iteration   1: 10.240 ops/ms
-# Warmup Iteration   2: 10.371 ops/ms
-Iteration   1: 12.158 ops/ms
-Iteration   2: 10.673 ops/ms
-Iteration   3: 11.352 ops/ms
+# Warmup Iteration   1: 10.368 ops/ms
+# Warmup Iteration   2: 10.404 ops/ms
+Iteration   1: 10.248 ops/ms
+                 gc.alloc.rate:      280.838 MB/sec
+                 gc.alloc.rate.norm: 29703.795 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   2: 10.546 ops/ms
+                 gc.alloc.rate:      291.762 MB/sec
+                 gc.alloc.rate.norm: 29695.220 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   3: 10.268 ops/ms
+                 gc.alloc.rate:      285.073 MB/sec
+                 gc.alloc.rate.norm: 29704.615 B/op
+                 gc.count:           ≈ 0 counts
+
 
 # Run progress: 11.11% complete, ETA 00:00:50
 # Fork: 2 of 3
-# Warmup Iteration   1: 10.326 ops/ms
-# Warmup Iteration   2: 10.664 ops/ms
-Iteration   1: 11.872 ops/ms
-Iteration   2: 10.234 ops/ms
-Iteration   3: 11.008 ops/ms
+# Warmup Iteration   1: 10.200 ops/ms
+# Warmup Iteration   2: 10.377 ops/ms
+Iteration   1: 11.183 ops/ms
+                 gc.alloc.rate:      307.530 MB/sec
+                 gc.alloc.rate.norm: 29687.442 B/op
+                 gc.count:           ≈ 0 counts
 
-# Run progress: 22.22% complete, ETA 00:00:43
+Iteration   2: 9.918 ops/ms
+                 gc.alloc.rate:      274.310 MB/sec
+                 gc.alloc.rate.norm: 29703.795 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   3: 10.754 ops/ms
+                 gc.alloc.rate:      298.066 MB/sec
+                 gc.alloc.rate.norm: 29695.220 B/op
+                 gc.count:           ≈ 0 counts
+
+
+# Run progress: 22.22% complete, ETA 00:00:44
 # Fork: 3 of 3
-# Warmup Iteration   1: 10.359 ops/ms
-# Warmup Iteration   2: 11.484 ops/ms
-Iteration   1: 14.525 ops/ms
-Iteration   2: 11.540 ops/ms
-Iteration   3: 10.370 ops/ms
+# Warmup Iteration   1: 10.446 ops/ms
+# Warmup Iteration   2: 10.353 ops/ms
+Iteration   1: 11.406 ops/ms
+                 gc.alloc.rate:      313.637 MB/sec
+                 gc.alloc.rate.norm: 29683.818 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   2: 11.863 ops/ms
+                 gc.alloc.rate:      327.499 MB/sec
+                 gc.alloc.rate.norm: 29677.043 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   3: 11.280 ops/ms
+                 gc.alloc.rate:      311.610 MB/sec
+                 gc.alloc.rate.norm: 29687.442 B/op
+                 gc.count:           ≈ 0 counts
+
 
 
 Result "com.kv.jmh.util.metrics.RunWithListTest.trace":
-  11.526 ±(99.9%) 2.187 ops/ms [Average]
-  (min, avg, max) = (10.234, 11.526, 14.525), stdev = 1.301
-  CI (99.9%): [9.339, 13.713] (assumes normal distribution)
+  10.830 ±(99.9%) 1.079 ops/ms [Average]
+  (min, avg, max) = (9.918, 10.830, 11.863), stdev = 0.642
+  CI (99.9%): [9.751, 11.909] (assumes normal distribution)
+
+Secondary result "com.kv.jmh.util.metrics.RunWithListTest.trace:gc.alloc.rate":
+  298.925 ±(99.9%) 29.377 MB/sec [Average]
+  (min, avg, max) = (274.310, 298.925, 327.499), stdev = 17.482
+  CI (99.9%): [269.548, 328.302] (assumes normal distribution)
+
+Secondary result "com.kv.jmh.util.metrics.RunWithListTest.trace:gc.alloc.rate.norm":
+  29693.154 ±(99.9%) 16.575 B/op [Average]
+  (min, avg, max) = (29677.043, 29693.154, 29704.615), stdev = 9.864
+  CI (99.9%): [29676.579, 29709.729] (assumes normal distribution)
+
+Secondary result "com.kv.jmh.util.metrics.RunWithListTest.trace:gc.count":
+  ≈ 0 counts
 
 
 # JMH version: 1.37
@@ -55,33 +104,82 @@ Result "com.kv.jmh.util.metrics.RunWithListTest.trace":
 
 # Run progress: 33.32% complete, ETA 00:00:37
 # Fork: 1 of 3
-# Warmup Iteration   1: 0.096 ms/op
+# Warmup Iteration   1: 0.095 ms/op
 # Warmup Iteration   2: 0.095 ms/op
-Iteration   1: 0.091 ms/op
-Iteration   2: 0.089 ms/op
-Iteration   3: 0.094 ms/op
+Iteration   1: 0.083 ms/op
+                 gc.alloc.rate:      334.323 MB/sec
+                 gc.alloc.rate.norm: 29673.872 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   2: 0.093 ms/op
+                 gc.alloc.rate:      296.085 MB/sec
+                 gc.alloc.rate.norm: 29688.186 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   3: 0.091 ms/op
+                 gc.alloc.rate:      304.213 MB/sec
+                 gc.alloc.rate.norm: 29687.442 B/op
+                 gc.count:           ≈ 0 counts
+
 
 # Run progress: 44.43% complete, ETA 00:00:31
 # Fork: 2 of 3
-# Warmup Iteration   1: 0.097 ms/op
+# Warmup Iteration   1: 0.098 ms/op
 # Warmup Iteration   2: 0.095 ms/op
-Iteration   1: 0.104 ms/op
-Iteration   2: 0.093 ms/op
-Iteration   3: 0.099 ms/op
+Iteration   1: 0.102 ms/op
+                 gc.alloc.rate:      271.035 MB/sec
+                 gc.alloc.rate.norm: 29687.442 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   2: 0.087 ms/op
+                 gc.alloc.rate:      316.335 MB/sec
+                 gc.alloc.rate.norm: 29683.818 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   3: 0.096 ms/op
+                 gc.alloc.rate:      289.658 MB/sec
+                 gc.alloc.rate.norm: 29700.200 B/op
+                 gc.count:           ≈ 0 counts
+
 
 # Run progress: 55.54% complete, ETA 00:00:25
 # Fork: 3 of 3
-# Warmup Iteration   1: 0.094 ms/op
-# Warmup Iteration   2: 0.094 ms/op
-Iteration   1: 0.104 ms/op
-Iteration   2: 0.100 ms/op
-Iteration   3: 0.096 ms/op
+# Warmup Iteration   1: 0.098 ms/op
+# Warmup Iteration   2: 0.095 ms/op
+Iteration   1: 0.095 ms/op
+                 gc.alloc.rate:      288.879 MB/sec
+                 gc.alloc.rate.norm: 29700.200 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   2: 0.093 ms/op
+                 gc.alloc.rate:      297.101 MB/sec
+                 gc.alloc.rate.norm: 29696.000 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   3: 0.088 ms/op
+                 gc.alloc.rate:      314.267 MB/sec
+                 gc.alloc.rate.norm: 29683.818 B/op
+                 gc.count:           ≈ 0 counts
+
 
 
 Result "com.kv.jmh.util.metrics.RunWithListTest.trace":
-  0.097 ±(99.9%) 0.009 ms/op [Average]
-  (min, avg, max) = (0.089, 0.097, 0.104), stdev = 0.005
-  CI (99.9%): [0.088, 0.106] (assumes normal distribution)
+  0.092 ±(99.9%) 0.009 ms/op [Average]
+  (min, avg, max) = (0.083, 0.092, 0.102), stdev = 0.006
+  CI (99.9%): [0.083, 0.101] (assumes normal distribution)
+
+Secondary result "com.kv.jmh.util.metrics.RunWithListTest.trace:gc.alloc.rate":
+  301.322 ±(99.9%) 31.121 MB/sec [Average]
+  (min, avg, max) = (271.035, 301.322, 334.323), stdev = 18.520
+  CI (99.9%): [270.201, 332.443] (assumes normal distribution)
+
+Secondary result "com.kv.jmh.util.metrics.RunWithListTest.trace:gc.alloc.rate.norm":
+  29688.998 ±(99.9%) 14.406 B/op [Average]
+  (min, avg, max) = (29673.872, 29688.998, 29700.200), stdev = 8.573
+  CI (99.9%): [29674.592, 29703.404] (assumes normal distribution)
+
+Secondary result "com.kv.jmh.util.metrics.RunWithListTest.trace:gc.count":
+  ≈ 0 counts
 
 
 # JMH version: 1.37
@@ -98,142 +196,179 @@ Result "com.kv.jmh.util.metrics.RunWithListTest.trace":
 
 # Run progress: 66.65% complete, ETA 00:00:18
 # Fork: 1 of 3
-# Warmup Iteration   1: 0.098 ±(99.9%) 0.002 ms/op
-# Warmup Iteration   2: 0.096 ±(99.9%) 0.001 ms/op
-Iteration   1: 0.111 ±(99.9%) 0.035 ms/op
-                 p0.00:   0.060 ms/op
-                 p0.50:   0.088 ms/op
-                 p0.90:   0.194 ms/op
-                 p0.95:   0.262 ms/op
-                 p0.99:   0.327 ms/op
-                 p0.999:  0.327 ms/op
-                 p0.9999: 0.327 ms/op
-                 p1.00:   0.327 ms/op
+# Warmup Iteration   1: 0.098 ±(99.9%) 0.001 ms/op
+# Warmup Iteration   2: 0.095 ±(99.9%) 0.001 ms/op
+Iteration   1: 0.156 ±(99.9%) 0.092 ms/op
+                 gc.alloc.rate:      191.746 MB/sec
+                 gc.alloc.rate.norm: 34446.400 B/op
+                 gc.count:           ≈ 0 counts
+                 p0.00:              0.065 ms/op
+                 p0.50:              0.109 ms/op
+                 p0.90:              0.426 ms/op
+                 p0.95:              0.473 ms/op
+                 p0.99:              0.481 ms/op
+                 p0.999:             0.481 ms/op
+                 p0.9999:            0.481 ms/op
+                 p1.00:              0.481 ms/op
 
-Iteration   2: 0.162 ±(99.9%) 0.125 ms/op
-                 p0.00:   0.061 ms/op
-                 p0.50:   0.112 ms/op
-                 p0.90:   0.382 ms/op
-                 p0.95:   0.708 ms/op
-                 p0.99:   0.773 ms/op
-                 p0.999:  0.773 ms/op
-                 p0.9999: 0.773 ms/op
-                 p1.00:   0.773 ms/op
+Iteration   2: 0.122 ±(99.9%) 0.044 ms/op
+                 gc.alloc.rate:      238.759 MB/sec
+                 gc.alloc.rate.norm: 33376.750 B/op
+                 gc.count:           ≈ 0 counts
+                 p0.00:              0.049 ms/op
+                 p0.50:              0.098 ms/op
+                 p0.90:              0.214 ms/op
+                 p0.95:              0.306 ms/op
+                 p0.99:              0.331 ms/op
+                 p0.999:             0.331 ms/op
+                 p0.9999:            0.331 ms/op
+                 p1.00:              0.331 ms/op
 
-Iteration   3: 0.113 ±(99.9%) 0.041 ms/op
-                 p0.00:   0.059 ms/op
-                 p0.50:   0.084 ms/op
-                 p0.90:   0.184 ms/op
-                 p0.95:   0.296 ms/op
-                 p0.99:   0.393 ms/op
-                 p0.999:  0.393 ms/op
-                 p0.9999: 0.393 ms/op
-                 p1.00:   0.393 ms/op
+Iteration   3: 0.113 ±(99.9%) 0.034 ms/op
+                 gc.alloc.rate:      255.149 MB/sec
+                 gc.alloc.rate.norm: 33155.059 B/op
+                 gc.count:           ≈ 0 counts
+                 p0.00:              0.053 ms/op
+                 p0.50:              0.099 ms/op
+                 p0.90:              0.187 ms/op
+                 p0.95:              0.240 ms/op
+                 p0.99:              0.315 ms/op
+                 p0.999:             0.315 ms/op
+                 p0.9999:            0.315 ms/op
+                 p1.00:              0.315 ms/op
 
 
 # Run progress: 77.76% complete, ETA 00:00:12
 # Fork: 2 of 3
-# Warmup Iteration   1: 0.101 ±(99.9%) 0.002 ms/op
-# Warmup Iteration   2: 0.098 ±(99.9%) 0.001 ms/op
-Iteration   1: 0.113 ±(99.9%) 0.054 ms/op
-                 p0.00:   0.064 ms/op
-                 p0.50:   0.082 ms/op
-                 p0.90:   0.218 ms/op
-                 p0.95:   0.319 ms/op
-                 p0.99:   0.521 ms/op
-                 p0.999:  0.521 ms/op
-                 p0.9999: 0.521 ms/op
-                 p1.00:   0.521 ms/op
+# Warmup Iteration   1: 0.096 ±(99.9%) 0.001 ms/op
+# Warmup Iteration   2: 0.097 ±(99.9%) 0.001 ms/op
+Iteration   1: 0.102 ±(99.9%) 0.049 ms/op
+                 gc.alloc.rate:      279.192 MB/sec
+                 gc.alloc.rate.norm: 32774.316 B/op
+                 gc.count:           ≈ 0 counts
+                 p0.00:              0.052 ms/op
+                 p0.50:              0.083 ms/op
+                 p0.90:              0.125 ms/op
+                 p0.95:              0.234 ms/op
+                 p0.99:              0.582 ms/op
+                 p0.999:             0.582 ms/op
+                 p0.9999:            0.582 ms/op
+                 p1.00:              0.582 ms/op
 
-Iteration   2: 0.100 ±(99.9%) 0.033 ms/op
-                 p0.00:   0.057 ms/op
-                 p0.50:   0.081 ms/op
-                 p0.90:   0.165 ms/op
-                 p0.95:   0.223 ms/op
-                 p0.99:   0.363 ms/op
-                 p0.999:  0.363 ms/op
-                 p0.9999: 0.363 ms/op
-                 p1.00:   0.363 ms/op
+Iteration   2: 0.101 ±(99.9%) 0.030 ms/op
+                 gc.alloc.rate:      283.234 MB/sec
+                 gc.alloc.rate.norm: 32775.368 B/op
+                 gc.count:           ≈ 0 counts
+                 p0.00:              0.054 ms/op
+                 p0.50:              0.088 ms/op
+                 p0.90:              0.176 ms/op
+                 p0.95:              0.205 ms/op
+                 p0.99:              0.333 ms/op
+                 p0.999:             0.333 ms/op
+                 p0.9999:            0.333 ms/op
+                 p1.00:              0.333 ms/op
 
-Iteration   3: 0.102 ±(99.9%) 0.042 ms/op
-                 p0.00:   0.061 ms/op
-                 p0.50:   0.081 ms/op
-                 p0.90:   0.188 ms/op
-                 p0.95:   0.279 ms/op
-                 p0.99:   0.437 ms/op
-                 p0.999:  0.437 ms/op
-                 p0.9999: 0.437 ms/op
-                 p1.00:   0.437 ms/op
+Iteration   3: 0.101 ±(99.9%) 0.027 ms/op
+                 gc.alloc.rate:      281.105 MB/sec
+                 gc.alloc.rate.norm: 32022.526 B/op
+                 gc.count:           ≈ 0 counts
+                 p0.00:              0.057 ms/op
+                 p0.50:              0.091 ms/op
+                 p0.90:              0.161 ms/op
+                 p0.95:              0.238 ms/op
+                 p0.99:              0.256 ms/op
+                 p0.999:             0.256 ms/op
+                 p0.9999:            0.256 ms/op
+                 p1.00:              0.256 ms/op
 
 
 # Run progress: 88.86% complete, ETA 00:00:06
 # Fork: 3 of 3
-# Warmup Iteration   1: 0.098 ±(99.9%) 0.002 ms/op
-# Warmup Iteration   2: 0.096 ±(99.9%) 0.001 ms/op
-Iteration   1: 0.106 ±(99.9%) 0.025 ms/op
-                 p0.00:   0.064 ms/op
-                 p0.50:   0.091 ms/op
-                 p0.90:   0.157 ms/op
-                 p0.95:   0.221 ms/op
-                 p0.99:   0.227 ms/op
-                 p0.999:  0.227 ms/op
-                 p0.9999: 0.227 ms/op
-                 p1.00:   0.227 ms/op
+# Warmup Iteration   1: 0.098 ±(99.9%) 0.001 ms/op
+# Warmup Iteration   2: 0.097 ±(99.9%) 0.001 ms/op
+Iteration   1: 0.110 ±(99.9%) 0.029 ms/op
+                 gc.alloc.rate:      257.183 MB/sec
+                 gc.alloc.rate.norm: 32158.889 B/op
+                 gc.count:           ≈ 0 counts
+                 p0.00:              0.062 ms/op
+                 p0.50:              0.089 ms/op
+                 p0.90:              0.213 ms/op
+                 p0.95:              0.225 ms/op
+                 p0.99:              0.252 ms/op
+                 p0.999:             0.252 ms/op
+                 p0.9999:            0.252 ms/op
+                 p1.00:              0.252 ms/op
 
-Iteration   2: 0.093 ±(99.9%) 0.025 ms/op
-                 p0.00:   0.054 ms/op
-                 p0.50:   0.076 ms/op
-                 p0.90:   0.151 ms/op
-                 p0.95:   0.195 ms/op
-                 p0.99:   0.290 ms/op
-                 p0.999:  0.290 ms/op
-                 p0.9999: 0.290 ms/op
-                 p1.00:   0.290 ms/op
+Iteration   2: 0.095 ±(99.9%) 0.023 ms/op
+                 gc.alloc.rate:      297.930 MB/sec
+                 gc.alloc.rate.norm: 31899.800 B/op
+                 gc.count:           ≈ 0 counts
+                 p0.00:              0.047 ms/op
+                 p0.50:              0.081 ms/op
+                 p0.90:              0.176 ms/op
+                 p0.95:              0.203 ms/op
+                 p0.99:              0.210 ms/op
+                 p0.999:             0.210 ms/op
+                 p0.9999:            0.210 ms/op
+                 p1.00:              0.210 ms/op
 
-Iteration   3: 0.098 ±(99.9%) 0.028 ms/op
-                 p0.00:   0.052 ms/op
-                 p0.50:   0.080 ms/op
-                 p0.90:   0.157 ms/op
-                 p0.95:   0.227 ms/op
-                 p0.99:   0.280 ms/op
-                 p0.999:  0.280 ms/op
-                 p0.9999: 0.280 ms/op
-                 p1.00:   0.280 ms/op
+Iteration   3: 0.101 ±(99.9%) 0.042 ms/op
+                 gc.alloc.rate:      283.728 MB/sec
+                 gc.alloc.rate.norm: 32775.368 B/op
+                 gc.count:           ≈ 0 counts
+                 p0.00:              0.059 ms/op
+                 p0.50:              0.083 ms/op
+                 p0.90:              0.131 ms/op
+                 p0.95:              0.274 ms/op
+                 p0.99:              0.474 ms/op
+                 p0.999:             0.474 ms/op
+                 p0.9999:            0.474 ms/op
+                 p1.00:              0.474 ms/op
 
 
 
 Result "com.kv.jmh.util.metrics.RunWithListTest.trace":
-  N = 317
-  mean =      0.108 ±(99.9%) 0.014 ms/op
+  N = 319
+  mean =      0.109 ±(99.9%) 0.013 ms/op
 
   Histogram, ms/op:
-    [0.000, 0.050) = 0 
-    [0.050, 0.100) = 208 
-    [0.100, 0.150) = 66 
-    [0.150, 0.200) = 20 
-    [0.200, 0.250) = 10 
-    [0.250, 0.300) = 6 
-    [0.300, 0.350) = 1 
-    [0.350, 0.400) = 2 
-    [0.400, 0.450) = 2 
-    [0.450, 0.500) = 0 
-    [0.500, 0.550) = 1 
-    [0.550, 0.600) = 0 
-    [0.600, 0.650) = 0 
-    [0.650, 0.700) = 0 
-    [0.700, 0.750) = 0 
+    [0.000, 0.050) = 3 
+    [0.050, 0.100) = 202 
+    [0.100, 0.150) = 69 
+    [0.150, 0.200) = 21 
+    [0.200, 0.250) = 11 
+    [0.250, 0.300) = 4 
+    [0.300, 0.350) = 4 
+    [0.350, 0.400) = 0 
+    [0.400, 0.450) = 1 
+    [0.450, 0.500) = 3 
+    [0.500, 0.550) = 0 
+    [0.550, 0.600) = 1 
 
   Percentiles, ms/op:
-      p(0.0000) =      0.052 ms/op
-     p(50.0000) =      0.084 ms/op
-     p(90.0000) =      0.178 ms/op
-     p(95.0000) =      0.227 ms/op
-     p(99.0000) =      0.446 ms/op
-     p(99.9000) =      0.773 ms/op
-     p(99.9900) =      0.773 ms/op
-     p(99.9990) =      0.773 ms/op
-     p(99.9999) =      0.773 ms/op
-    p(100.0000) =      0.773 ms/op
+      p(0.0000) =      0.047 ms/op
+     p(50.0000) =      0.088 ms/op
+     p(90.0000) =      0.177 ms/op
+     p(95.0000) =      0.217 ms/op
+     p(99.0000) =      0.470 ms/op
+     p(99.9000) =      0.582 ms/op
+     p(99.9900) =      0.582 ms/op
+     p(99.9990) =      0.582 ms/op
+     p(99.9999) =      0.582 ms/op
+    p(100.0000) =      0.582 ms/op
+
+Secondary result "com.kv.jmh.util.metrics.RunWithListTest.trace:gc.alloc.rate":
+  263.114 ±(99.9%) 54.482 MB/sec [Average]
+  (min, avg, max) = (191.746, 263.114, 297.930), stdev = 32.421
+  CI (99.9%): [208.632, 317.596] (assumes normal distribution)
+
+Secondary result "com.kv.jmh.util.metrics.RunWithListTest.trace:gc.alloc.rate.norm":
+  32820.497 ±(99.9%) 1327.608 B/op [Average]
+  (min, avg, max) = (31899.800, 32820.497, 34446.400), stdev = 790.038
+  CI (99.9%): [31492.890, 34148.105] (assumes normal distribution)
+
+Secondary result "com.kv.jmh.util.metrics.RunWithListTest.trace:gc.count":
+  ≈ 0 counts
 
 
 # JMH version: 1.37
@@ -250,68 +385,109 @@ Result "com.kv.jmh.util.metrics.RunWithListTest.trace":
 
 # Run progress: 99.97% complete, ETA 00:00:00
 # Fork: 1 of 3
-# Warmup Iteration   1: 0.569 ms/op
-# Warmup Iteration   2: 0.163 ms/op
-Iteration   1: 0.121 ms/op
-Iteration   2: 0.129 ms/op
-Iteration   3: 0.131 ms/op
+# Warmup Iteration   1: 0.621 ms/op
+# Warmup Iteration   2: 0.143 ms/op
+Iteration   1: 0.122 ms/op
+                 gc.alloc.rate:      182.022 MB/sec
+                 gc.alloc.rate.norm: 36288.000 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   2: 0.158 ms/op
+                 gc.alloc.rate:      143.374 MB/sec
+                 gc.alloc.rate.norm: 36288.000 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   3: 0.125 ms/op
+                 gc.alloc.rate:      179.701 MB/sec
+                 gc.alloc.rate.norm: 36304.000 B/op
+                 gc.count:           ≈ 0 counts
+
 
 # Run progress: 99.98% complete, ETA 00:00:00
 # Fork: 2 of 3
-# Warmup Iteration   1: 0.521 ms/op
-# Warmup Iteration   2: 0.147 ms/op
-Iteration   1: 0.111 ms/op
-Iteration   2: 0.119 ms/op
-Iteration   3: 0.118 ms/op
+# Warmup Iteration   1: 0.647 ms/op
+# Warmup Iteration   2: 0.133 ms/op
+Iteration   1: 0.122 ms/op
+                 gc.alloc.rate:      176.453 MB/sec
+                 gc.alloc.rate.norm: 36288.000 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   2: 0.151 ms/op
+                 gc.alloc.rate:      150.711 MB/sec
+                 gc.alloc.rate.norm: 36288.000 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   3: 0.127 ms/op
+                 gc.alloc.rate:      152.689 MB/sec
+                 gc.alloc.rate.norm: 36304.000 B/op
+                 gc.count:           ≈ 0 counts
+
 
 # Run progress: 99.99% complete, ETA 00:00:00
 # Fork: 3 of 3
-# Warmup Iteration   1: 0.656 ms/op
-# Warmup Iteration   2: 0.185 ms/op
-Iteration   1: 0.141 ms/op
-Iteration   2: 0.109 ms/op
-Iteration   3: 0.125 ms/op
+# Warmup Iteration   1: 0.626 ms/op
+# Warmup Iteration   2: 0.154 ms/op
+Iteration   1: 0.129 ms/op
+                 gc.alloc.rate:      149.383 MB/sec
+                 gc.alloc.rate.norm: 36288.000 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   2: 0.172 ms/op
+                 gc.alloc.rate:      131.169 MB/sec
+                 gc.alloc.rate.norm: 36288.000 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   3: 0.138 ms/op
+                 gc.alloc.rate:      158.032 MB/sec
+                 gc.alloc.rate.norm: 36304.000 B/op
+                 gc.count:           ≈ 0 counts
+
 
 
 Result "com.kv.jmh.util.metrics.RunWithListTest.trace":
   N = 9
-  mean =      0.123 ±(99.9%) 0.017 ms/op
+  mean =      0.138 ±(99.9%) 0.030 ms/op
 
   Histogram, ms/op:
-    [0.100, 0.103) = 0 
-    [0.103, 0.105) = 0 
-    [0.105, 0.108) = 0 
-    [0.108, 0.110) = 1 
-    [0.110, 0.113) = 1 
-    [0.113, 0.115) = 0 
-    [0.115, 0.118) = 1 
-    [0.118, 0.120) = 1 
-    [0.120, 0.123) = 1 
-    [0.123, 0.125) = 0 
-    [0.125, 0.128) = 1 
-    [0.128, 0.130) = 1 
-    [0.130, 0.133) = 1 
-    [0.133, 0.135) = 0 
-    [0.135, 0.138) = 0 
-    [0.138, 0.140) = 0 
-    [0.140, 0.143) = 1 
-    [0.143, 0.145) = 0 
-    [0.145, 0.148) = 0 
+    [0.120, 0.125) = 2 
+    [0.125, 0.130) = 3 
+    [0.130, 0.135) = 0 
+    [0.135, 0.140) = 1 
+    [0.140, 0.145) = 0 
+    [0.145, 0.150) = 0 
+    [0.150, 0.155) = 1 
+    [0.155, 0.160) = 1 
+    [0.160, 0.165) = 0 
+    [0.165, 0.170) = 0 
+    [0.170, 0.175) = 1 
 
   Percentiles, ms/op:
-      p(0.0000) =      0.109 ms/op
-     p(50.0000) =      0.121 ms/op
-     p(90.0000) =      0.141 ms/op
-     p(95.0000) =      0.141 ms/op
-     p(99.0000) =      0.141 ms/op
-     p(99.9000) =      0.141 ms/op
-     p(99.9900) =      0.141 ms/op
-     p(99.9990) =      0.141 ms/op
-     p(99.9999) =      0.141 ms/op
-    p(100.0000) =      0.141 ms/op
+      p(0.0000) =      0.122 ms/op
+     p(50.0000) =      0.129 ms/op
+     p(90.0000) =      0.172 ms/op
+     p(95.0000) =      0.172 ms/op
+     p(99.0000) =      0.172 ms/op
+     p(99.9000) =      0.172 ms/op
+     p(99.9900) =      0.172 ms/op
+     p(99.9990) =      0.172 ms/op
+     p(99.9999) =      0.172 ms/op
+    p(100.0000) =      0.172 ms/op
+
+Secondary result "com.kv.jmh.util.metrics.RunWithListTest.trace:gc.alloc.rate":
+  158.170 ±(99.9%) 29.573 MB/sec [Average]
+  (min, avg, max) = (131.169, 158.170, 182.022), stdev = 17.598
+  CI (99.9%): [128.597, 187.743] (assumes normal distribution)
+
+Secondary result "com.kv.jmh.util.metrics.RunWithListTest.trace:gc.alloc.rate.norm":
+  36293.333 ±(99.9%) 13.443 B/op [Average]
+  (min, avg, max) = (36288.000, 36293.333, 36304.000), stdev = 8.000
+  CI (99.9%): [36279.890, 36306.777] (assumes normal distribution)
+
+Secondary result "com.kv.jmh.util.metrics.RunWithListTest.trace:gc.count":
+  ≈ 0 counts
 
 
-# Run complete. Total time: 00:00:57
+# Run complete. Total time: 00:00:58
 
 REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
 why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
@@ -325,16 +501,28 @@ works, and factor in a small probability of new VM bugs. Additionally, while com
 different JVMs are already problematic, the performance difference caused by different Blackhole
 modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
 
-Benchmark                        Mode  Cnt   Score   Error   Units
-RunWithListTest.trace           thrpt    9  11.526 ± 2.187  ops/ms
-RunWithListTest.trace            avgt    9   0.097 ± 0.009   ms/op
-RunWithListTest.trace          sample  317   0.108 ± 0.014   ms/op
-RunWithListTest.trace:p0.00    sample        0.052           ms/op
-RunWithListTest.trace:p0.50    sample        0.084           ms/op
-RunWithListTest.trace:p0.90    sample        0.178           ms/op
-RunWithListTest.trace:p0.95    sample        0.227           ms/op
-RunWithListTest.trace:p0.99    sample        0.446           ms/op
-RunWithListTest.trace:p0.999   sample        0.773           ms/op
-RunWithListTest.trace:p0.9999  sample        0.773           ms/op
-RunWithListTest.trace:p1.00    sample        0.773           ms/op
-RunWithListTest.trace              ss    9   0.123 ± 0.017   ms/op
+Benchmark                                   Mode  Cnt      Score      Error   Units
+RunWithListTest.trace                      thrpt    9     10.830 ±    1.079  ops/ms
+RunWithListTest.trace:gc.alloc.rate        thrpt    9    298.925 ±   29.377  MB/sec
+RunWithListTest.trace:gc.alloc.rate.norm   thrpt    9  29693.154 ±   16.575    B/op
+RunWithListTest.trace:gc.count             thrpt    9        ≈ 0             counts
+RunWithListTest.trace                       avgt    9      0.092 ±    0.009   ms/op
+RunWithListTest.trace:gc.alloc.rate         avgt    9    301.322 ±   31.121  MB/sec
+RunWithListTest.trace:gc.alloc.rate.norm    avgt    9  29688.998 ±   14.406    B/op
+RunWithListTest.trace:gc.count              avgt    9        ≈ 0             counts
+RunWithListTest.trace                     sample  319      0.109 ±    0.013   ms/op
+RunWithListTest.trace:gc.alloc.rate       sample    9    263.114 ±   54.482  MB/sec
+RunWithListTest.trace:gc.alloc.rate.norm  sample    9  32820.497 ± 1327.608    B/op
+RunWithListTest.trace:gc.count            sample    9        ≈ 0             counts
+RunWithListTest.trace:p0.00               sample           0.047              ms/op
+RunWithListTest.trace:p0.50               sample           0.088              ms/op
+RunWithListTest.trace:p0.90               sample           0.177              ms/op
+RunWithListTest.trace:p0.95               sample           0.217              ms/op
+RunWithListTest.trace:p0.99               sample           0.470              ms/op
+RunWithListTest.trace:p0.999              sample           0.582              ms/op
+RunWithListTest.trace:p0.9999             sample           0.582              ms/op
+RunWithListTest.trace:p1.00               sample           0.582              ms/op
+RunWithListTest.trace                         ss    9      0.138 ±    0.030   ms/op
+RunWithListTest.trace:gc.alloc.rate           ss    9    158.170 ±   29.573  MB/sec
+RunWithListTest.trace:gc.alloc.rate.norm      ss    9  36293.333 ±   13.443    B/op
+RunWithListTest.trace:gc.count                ss    9        ≈ 0             counts

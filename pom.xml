@@ -56,6 +56,13 @@
 			<artifactId>commons-lang3</artifactId>
 			<version>3.0</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.netty/netty-resolver-dns-native-macos -->
+		<dependency>
+			<groupId>io.netty</groupId>
+			<artifactId>netty-resolver-dns-native-macos</artifactId>
+			<version>4.1.119.Final</version>
+			<scope>runtime</scope>
+		</dependency>
 
 	</dependencies>
 
@@ -103,5 +110,24 @@
 			</plugin>
 		</plugins>
 	</build>
-
+	<profiles>
+		<profile>
+			<id>aarch64-macos-users</id>
+			<activation>
+				<os>
+					<family>mac</family>
+					<arch>aarch64</arch>
+				</os>
+			</activation>
+			<dependencies>
+				<dependency>
+					<groupId>io.netty</groupId>
+					<artifactId>netty-resolver-dns-native-macos</artifactId>
+					<classifier>osx-aarch_64</classifier>
+					<scope>runtime</scope>
+					<optional>true</optional>
+				</dependency>
+			</dependencies>
+		</profile>
+	</profiles>
 </project>

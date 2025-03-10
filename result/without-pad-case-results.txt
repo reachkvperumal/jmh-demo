@@ -12,33 +12,82 @@
 
 # Run progress: 0.00% complete, ETA 00:05:24
 # Fork: 1 of 3
-# Warmup Iteration   1: 0.016 ops/ms
+# Warmup Iteration   1: 0.017 ops/ms
 # Warmup Iteration   2: 0.017 ops/ms
 Iteration   1: 0.017 ops/ms
+                 gc.alloc.rate:      0.055 MB/sec
+                 gc.alloc.rate.norm: 3400.757 B/op
+                 gc.count:           ≈ 0 counts
+
 Iteration   2: 0.017 ops/ms
+                 gc.alloc.rate:      0.056 MB/sec
+                 gc.alloc.rate.norm: 3405.655 B/op
+                 gc.count:           ≈ 0 counts
+
 Iteration   3: 0.017 ops/ms
+                 gc.alloc.rate:      0.055 MB/sec
+                 gc.alloc.rate.norm: 3411.718 B/op
+                 gc.count:           ≈ 0 counts
+
 
 # Run progress: 11.11% complete, ETA 00:04:51
 # Fork: 2 of 3
 # Warmup Iteration   1: 0.017 ops/ms
 # Warmup Iteration   2: 0.017 ops/ms
 Iteration   1: 0.017 ops/ms
+                 gc.alloc.rate:      0.055 MB/sec
+                 gc.alloc.rate.norm: 3400.094 B/op
+                 gc.count:           ≈ 0 counts
+
 Iteration   2: 0.017 ops/ms
+                 gc.alloc.rate:      0.054 MB/sec
+                 gc.alloc.rate.norm: 3407.377 B/op
+                 gc.count:           ≈ 0 counts
+
 Iteration   3: 0.017 ops/ms
+                 gc.alloc.rate:      0.056 MB/sec
+                 gc.alloc.rate.norm: 3410.529 B/op
+                 gc.count:           ≈ 0 counts
+
 
 # Run progress: 22.22% complete, ETA 00:04:15
 # Fork: 3 of 3
 # Warmup Iteration   1: 0.017 ops/ms
 # Warmup Iteration   2: 0.017 ops/ms
 Iteration   1: 0.017 ops/ms
+                 gc.alloc.rate:      0.054 MB/sec
+                 gc.alloc.rate.norm: 3401.000 B/op
+                 gc.count:           ≈ 0 counts
+
 Iteration   2: 0.017 ops/ms
+                 gc.alloc.rate:      0.056 MB/sec
+                 gc.alloc.rate.norm: 3406.000 B/op
+                 gc.count:           ≈ 0 counts
+
 Iteration   3: 0.017 ops/ms
+                 gc.alloc.rate:      0.055 MB/sec
+                 gc.alloc.rate.norm: 3411.602 B/op
+                 gc.count:           ≈ 0 counts
+
 
 
 Result "com.kv.jmh.util.metrics.RunWithOutPadTest.trace":
   0.017 ±(99.9%) 0.001 ops/ms [Average]
   (min, avg, max) = (0.017, 0.017, 0.017), stdev = 0.001
   CI (99.9%): [0.017, 0.017] (assumes normal distribution)
+
+Secondary result "com.kv.jmh.util.metrics.RunWithOutPadTest.trace:gc.alloc.rate":
+  0.055 ±(99.9%) 0.001 MB/sec [Average]
+  (min, avg, max) = (0.054, 0.055, 0.056), stdev = 0.001
+  CI (99.9%): [0.054, 0.057] (assumes normal distribution)
+
+Secondary result "com.kv.jmh.util.metrics.RunWithOutPadTest.trace:gc.alloc.rate.norm":
+  3406.081 ±(99.9%) 7.835 B/op [Average]
+  (min, avg, max) = (3400.094, 3406.081, 3411.718), stdev = 4.663
+  CI (99.9%): [3398.246, 3413.916] (assumes normal distribution)
+
+Secondary result "com.kv.jmh.util.metrics.RunWithOutPadTest.trace:gc.count":
+  ≈ 0 counts
 
 
 # JMH version: 1.37
@@ -55,33 +104,82 @@ Result "com.kv.jmh.util.metrics.RunWithOutPadTest.trace":
 
 # Run progress: 33.33% complete, ETA 00:03:38
 # Fork: 1 of 3
-# Warmup Iteration   1: 60.239 ms/op
-# Warmup Iteration   2: 58.045 ms/op
-Iteration   1: 58.125 ms/op
-Iteration   2: 59.506 ms/op
-Iteration   3: 59.133 ms/op
+# Warmup Iteration   1: 59.098 ms/op
+# Warmup Iteration   2: 59.699 ms/op
+Iteration   1: 59.544 ms/op
+                 gc.alloc.rate:      0.054 MB/sec
+                 gc.alloc.rate.norm: 3400.810 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   2: 58.773 ms/op
+                 gc.alloc.rate:      0.055 MB/sec
+                 gc.alloc.rate.norm: 3406.456 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   3: 58.321 ms/op
+                 gc.alloc.rate:      0.056 MB/sec
+                 gc.alloc.rate.norm: 3411.302 B/op
+                 gc.count:           ≈ 0 counts
+
 
 # Run progress: 44.44% complete, ETA 00:03:02
 # Fork: 2 of 3
-# Warmup Iteration   1: 57.920 ms/op
-# Warmup Iteration   2: 59.417 ms/op
-Iteration   1: 57.742 ms/op
-Iteration   2: 58.283 ms/op
-Iteration   3: 57.989 ms/op
+# Warmup Iteration   1: 60.678 ms/op
+# Warmup Iteration   2: 59.654 ms/op
+Iteration   1: 58.380 ms/op
+                 gc.alloc.rate:      0.056 MB/sec
+                 gc.alloc.rate.norm: 3399.860 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   2: 58.292 ms/op
+                 gc.alloc.rate:      0.056 MB/sec
+                 gc.alloc.rate.norm: 3406.186 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   3: 60.154 ms/op
+                 gc.alloc.rate:      0.054 MB/sec
+                 gc.alloc.rate.norm: 3412.647 B/op
+                 gc.count:           ≈ 0 counts
+
 
 # Run progress: 55.55% complete, ETA 00:02:25
 # Fork: 3 of 3
-# Warmup Iteration   1: 59.445 ms/op
-# Warmup Iteration   2: 57.545 ms/op
-Iteration   1: 58.600 ms/op
-Iteration   2: 63.851 ms/op
-Iteration   3: 62.479 ms/op
+# Warmup Iteration   1: 59.524 ms/op
+# Warmup Iteration   2: 58.647 ms/op
+Iteration   1: 58.465 ms/op
+                 gc.alloc.rate:      0.055 MB/sec
+                 gc.alloc.rate.norm: 3399.860 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   2: 58.951 ms/op
+                 gc.alloc.rate:      0.055 MB/sec
+                 gc.alloc.rate.norm: 3406.729 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   3: 58.858 ms/op
+                 gc.alloc.rate:      0.055 MB/sec
+                 gc.alloc.rate.norm: 3411.415 B/op
+                 gc.count:           ≈ 0 counts
+
 
 
 Result "com.kv.jmh.util.metrics.RunWithOutPadTest.trace":
-  59.523 ±(99.9%) 3.638 ms/op [Average]
-  (min, avg, max) = (57.742, 59.523, 63.851), stdev = 2.165
-  CI (99.9%): [55.885, 63.161] (assumes normal distribution)
+  58.860 ±(99.9%) 1.056 ms/op [Average]
+  (min, avg, max) = (58.292, 58.860, 60.154), stdev = 0.628
+  CI (99.9%): [57.804, 59.916] (assumes normal distribution)
+
+Secondary result "com.kv.jmh.util.metrics.RunWithOutPadTest.trace:gc.alloc.rate":
+  0.055 ±(99.9%) 0.001 MB/sec [Average]
+  (min, avg, max) = (0.054, 0.055, 0.056), stdev = 0.001
+  CI (99.9%): [0.054, 0.056] (assumes normal distribution)
+
+Secondary result "com.kv.jmh.util.metrics.RunWithOutPadTest.trace:gc.alloc.rate.norm":
+  3406.141 ±(99.9%) 8.497 B/op [Average]
+  (min, avg, max) = (3399.860, 3406.141, 3412.647), stdev = 5.056
+  CI (99.9%): [3397.644, 3414.638] (assumes normal distribution)
+
+Secondary result "com.kv.jmh.util.metrics.RunWithOutPadTest.trace:gc.count":
+  ≈ 0 counts
 
 
 # JMH version: 1.37
@@ -98,138 +196,180 @@ Result "com.kv.jmh.util.metrics.RunWithOutPadTest.trace":
 
 # Run progress: 66.66% complete, ETA 00:01:49
 # Fork: 1 of 3
-# Warmup Iteration   1: 61.183 ±(99.9%) 5.073 ms/op
-# Warmup Iteration   2: 60.142 ±(99.9%) 4.016 ms/op
-Iteration   1: 58.839 ±(99.9%) 2.102 ms/op
-                 p0.00:   45.744 ms/op
-                 p0.50:   56.885 ms/op
-                 p0.90:   70.097 ms/op
-                 p0.95:   72.797 ms/op
-                 p0.99:   77.578 ms/op
-                 p0.999:  77.857 ms/op
-                 p0.9999: 77.857 ms/op
-                 p1.00:   77.857 ms/op
+# Warmup Iteration   1: 58.359 ±(99.9%) 3.762 ms/op
+# Warmup Iteration   2: 61.153 ±(99.9%) 4.060 ms/op
+Iteration   1: 58.830 ±(99.9%) 2.141 ms/op
+                 gc.alloc.rate:      0.061 MB/sec
+                 gc.alloc.rate.norm: 3776.374 B/op
+                 gc.count:           ≈ 0 counts
+                 p0.00:              41.878 ms/op
+                 p0.50:              57.606 ms/op
+                 p0.90:              70.910 ms/op
+                 p0.95:              73.977 ms/op
+                 p0.99:              78.491 ms/op
+                 p0.999:             78.774 ms/op
+                 p0.9999:            78.774 ms/op
+                 p1.00:              78.774 ms/op
 
-Iteration   2: 58.025 ±(99.9%) 2.089 ms/op
-                 p0.00:   41.943 ms/op
-                 p0.50:   56.361 ms/op
-                 p0.90:   69.940 ms/op
-                 p0.95:   73.348 ms/op
-                 p0.99:   82.376 ms/op
-                 p0.999:  87.032 ms/op
-                 p0.9999: 87.032 ms/op
-                 p1.00:   87.032 ms/op
+Iteration   2: 58.756 ±(99.9%) 2.138 ms/op
+                 gc.alloc.rate:      0.061 MB/sec
+                 gc.alloc.rate.norm: 3772.912 B/op
+                 gc.count:           ≈ 0 counts
+                 p0.00:              41.943 ms/op
+                 p0.50:              58.786 ms/op
+                 p0.90:              69.730 ms/op
+                 p0.95:              73.584 ms/op
+                 p0.99:              79.524 ms/op
+                 p0.999:             88.867 ms/op
+                 p0.9999:            88.867 ms/op
+                 p1.00:              88.867 ms/op
 
-Iteration   3: 58.626 ±(99.9%) 2.061 ms/op
-                 p0.00:   43.385 ms/op
-                 p0.50:   57.147 ms/op
-                 p0.90:   70.438 ms/op
-                 p0.95:   74.161 ms/op
-                 p0.99:   77.946 ms/op
-                 p0.999:  80.871 ms/op
-                 p0.9999: 80.871 ms/op
-                 p1.00:   80.871 ms/op
+Iteration   3: 58.351 ±(99.9%) 2.174 ms/op
+                 gc.alloc.rate:      0.062 MB/sec
+                 gc.alloc.rate.norm: 3779.070 B/op
+                 gc.count:           ≈ 0 counts
+                 p0.00:              42.402 ms/op
+                 p0.50:              57.115 ms/op
+                 p0.90:              70.569 ms/op
+                 p0.95:              73.230 ms/op
+                 p0.99:              81.132 ms/op
+                 p0.999:             84.673 ms/op
+                 p0.9999:            84.673 ms/op
+                 p1.00:              84.673 ms/op
 
 
 # Run progress: 77.77% complete, ETA 00:01:12
 # Fork: 2 of 3
-# Warmup Iteration   1: 59.079 ±(99.9%) 3.450 ms/op
-# Warmup Iteration   2: 58.714 ±(99.9%) 3.369 ms/op
-Iteration   1: 58.465 ±(99.9%) 1.990 ms/op
-                 p0.00:   41.943 ms/op
-                 p0.50:   56.885 ms/op
-                 p0.90:   69.914 ms/op
-                 p0.95:   71.932 ms/op
-                 p0.99:   77.395 ms/op
-                 p0.999:  79.692 ms/op
-                 p0.9999: 79.692 ms/op
-                 p1.00:   79.692 ms/op
+# Warmup Iteration   1: 58.636 ±(99.9%) 3.948 ms/op
+# Warmup Iteration   2: 58.434 ±(99.9%) 4.269 ms/op
+Iteration   1: 59.079 ±(99.9%) 2.186 ms/op
+                 gc.alloc.rate:      0.061 MB/sec
+                 gc.alloc.rate.norm: 3778.353 B/op
+                 gc.count:           ≈ 0 counts
+                 p0.00:              41.878 ms/op
+                 p0.50:              57.115 ms/op
+                 p0.90:              71.382 ms/op
+                 p0.95:              73.505 ms/op
+                 p0.99:              80.376 ms/op
+                 p0.999:             82.051 ms/op
+                 p0.9999:            82.051 ms/op
+                 p1.00:              82.051 ms/op
 
-Iteration   2: 57.732 ±(99.9%) 2.022 ms/op
-                 p0.00:   41.943 ms/op
-                 p0.50:   55.443 ms/op
-                 p0.90:   69.009 ms/op
-                 p0.95:   74.449 ms/op
-                 p0.99:   77.038 ms/op
-                 p0.999:  80.085 ms/op
-                 p0.9999: 80.085 ms/op
-                 p1.00:   80.085 ms/op
+Iteration   2: 57.647 ±(99.9%) 2.066 ms/op
+                 gc.alloc.rate:      0.062 MB/sec
+                 gc.alloc.rate.norm: 3763.724 B/op
+                 gc.count:           ≈ 0 counts
+                 p0.00:              41.878 ms/op
+                 p0.50:              55.804 ms/op
+                 p0.90:              69.272 ms/op
+                 p0.95:              73.957 ms/op
+                 p0.99:              77.922 ms/op
+                 p0.999:             78.905 ms/op
+                 p0.9999:            78.905 ms/op
+                 p1.00:              78.905 ms/op
 
-Iteration   3: 57.918 ±(99.9%) 2.160 ms/op
-                 p0.00:   41.943 ms/op
-                 p0.50:   56.099 ms/op
-                 p0.90:   69.888 ms/op
-                 p0.95:   73.571 ms/op
-                 p0.99:   78.022 ms/op
-                 p0.999:  78.119 ms/op
-                 p0.9999: 78.119 ms/op
-                 p1.00:   78.119 ms/op
+Iteration   3: 59.711 ±(99.9%) 2.417 ms/op
+                 gc.alloc.rate:      0.060 MB/sec
+                 gc.alloc.rate.norm: 3790.238 B/op
+                 gc.count:           ≈ 0 counts
+                 p0.00:              37.552 ms/op
+                 p0.50:              58.524 ms/op
+                 p0.90:              72.771 ms/op
+                 p0.95:              78.663 ms/op
+                 p0.99:              83.809 ms/op
+                 p0.999:             84.804 ms/op
+                 p0.9999:            84.804 ms/op
+                 p1.00:              84.804 ms/op
 
 
 # Run progress: 88.88% complete, ETA 00:00:36
 # Fork: 3 of 3
-# Warmup Iteration   1: 59.395 ±(99.9%) 4.330 ms/op
-# Warmup Iteration   2: 58.515 ±(99.9%) 4.132 ms/op
-Iteration   1: 58.055 ±(99.9%) 1.999 ms/op
-                 p0.00:   44.892 ms/op
-                 p0.50:   55.968 ms/op
-                 p0.90:   69.599 ms/op
-                 p0.95:   73.073 ms/op
-                 p0.99:   77.629 ms/op
-                 p0.999:  77.726 ms/op
-                 p0.9999: 77.726 ms/op
-                 p1.00:   77.726 ms/op
+# Warmup Iteration   1: 58.388 ±(99.9%) 4.086 ms/op
+# Warmup Iteration   2: 58.759 ±(99.9%) 4.217 ms/op
+Iteration   1: 58.937 ±(99.9%) 2.061 ms/op
+                 gc.alloc.rate:      0.061 MB/sec
+                 gc.alloc.rate.norm: 3779.765 B/op
+                 gc.count:           ≈ 0 counts
+                 p0.00:              46.006 ms/op
+                 p0.50:              57.278 ms/op
+                 p0.90:              71.133 ms/op
+                 p0.95:              73.984 ms/op
+                 p0.99:              80.308 ms/op
+                 p0.999:             83.100 ms/op
+                 p0.9999:            83.100 ms/op
+                 p1.00:              83.100 ms/op
 
-Iteration   2: 57.933 ±(99.9%) 2.023 ms/op
-                 p0.00:   42.402 ms/op
-                 p0.50:   56.033 ms/op
-                 p0.90:   68.918 ms/op
-                 p0.95:   73.217 ms/op
-                 p0.99:   80.213 ms/op
-                 p0.999:  82.444 ms/op
-                 p0.9999: 82.444 ms/op
-                 p1.00:   82.444 ms/op
+Iteration   2: 76.465 ±(99.9%) 3.006 ms/op
+                 gc.alloc.rate:      0.048 MB/sec
+                 gc.alloc.rate.norm: 3884.641 B/op
+                 gc.count:           ≈ 0 counts
+                 p0.00:              45.744 ms/op
+                 p0.50:              78.643 ms/op
+                 p0.90:              85.983 ms/op
+                 p0.95:              89.679 ms/op
+                 p0.99:              95.625 ms/op
+                 p0.999:             96.338 ms/op
+                 p0.9999:            96.338 ms/op
+                 p1.00:              96.338 ms/op
 
-Iteration   3: 59.551 ±(99.9%) 2.126 ms/op
-                 p0.00:   43.188 ms/op
-                 p0.50:   57.639 ms/op
-                 p0.90:   71.329 ms/op
-                 p0.95:   72.830 ms/op
-                 p0.99:   88.101 ms/op
-                 p0.999:  91.357 ms/op
-                 p0.9999: 91.357 ms/op
-                 p1.00:   91.357 ms/op
+Iteration   3: 80.580 ±(99.9%) 1.836 ms/op
+                 gc.alloc.rate:      0.046 MB/sec
+                 gc.alloc.rate.norm: 3905.792 B/op
+                 gc.count:           ≈ 0 counts
+                 p0.00:              59.113 ms/op
+                 p0.50:              80.609 ms/op
+                 p0.90:              88.395 ms/op
+                 p0.95:              89.588 ms/op
+                 p0.99:              95.116 ms/op
+                 p0.999:             96.207 ms/op
+                 p0.9999:            96.207 ms/op
+                 p1.00:              96.207 ms/op
 
 
 
 Result "com.kv.jmh.util.metrics.RunWithOutPadTest.trace":
-  N = 1547
-  mean =     58.344 ±(99.9%) 0.677 ms/op
+  N = 1452
+  mean =     62.230 ±(99.9%) 0.982 ms/op
 
   Histogram, ms/op:
-    [ 40.000,  45.000) = 20 
-    [ 45.000,  50.000) = 191 
-    [ 50.000,  55.000) = 432 
-    [ 55.000,  60.000) = 313 
-    [ 60.000,  65.000) = 238 
-    [ 65.000,  70.000) = 207 
-    [ 70.000,  75.000) = 101 
-    [ 75.000,  80.000) = 37 
-    [ 80.000,  85.000) = 5 
-    [ 85.000,  90.000) = 2 
-    [ 90.000,  95.000) = 1 
+    [ 30.000,  35.000) = 0 
+    [ 35.000,  40.000) = 1 
+    [ 40.000,  45.000) = 22 
+    [ 45.000,  50.000) = 136 
+    [ 50.000,  55.000) = 329 
+    [ 55.000,  60.000) = 226 
+    [ 60.000,  65.000) = 198 
+    [ 65.000,  70.000) = 176 
+    [ 70.000,  75.000) = 136 
+    [ 75.000,  80.000) = 96 
+    [ 80.000,  85.000) = 77 
+    [ 85.000,  90.000) = 47 
+    [ 90.000,  95.000) = 6 
 
   Percentiles, ms/op:
-      p(0.0000) =     41.943 ms/op
-     p(50.0000) =     56.492 ms/op
-     p(90.0000) =     69.730 ms/op
-     p(95.0000) =     73.086 ms/op
-     p(99.0000) =     77.532 ms/op
-     p(99.9000) =     88.987 ms/op
-     p(99.9900) =     91.357 ms/op
-     p(99.9990) =     91.357 ms/op
-     p(99.9999) =     91.357 ms/op
-    p(100.0000) =     91.357 ms/op
+      p(0.0000) =     37.552 ms/op
+     p(50.0000) =     60.162 ms/op
+     p(90.0000) =     79.299 ms/op
+     p(95.0000) =     84.279 ms/op
+     p(99.0000) =     89.191 ms/op
+     p(99.9000) =     96.279 ms/op
+     p(99.9900) =     96.338 ms/op
+     p(99.9990) =     96.338 ms/op
+     p(99.9999) =     96.338 ms/op
+    p(100.0000) =     96.338 ms/op
+
+Secondary result "com.kv.jmh.util.metrics.RunWithOutPadTest.trace:gc.alloc.rate":
+  0.058 ±(99.9%) 0.010 MB/sec [Average]
+  (min, avg, max) = (0.046, 0.058, 0.062), stdev = 0.006
+  CI (99.9%): [0.048, 0.069] (assumes normal distribution)
+
+Secondary result "com.kv.jmh.util.metrics.RunWithOutPadTest.trace:gc.alloc.rate.norm":
+  3803.430 ±(99.9%) 88.661 B/op [Average]
+  (min, avg, max) = (3763.724, 3803.430, 3905.792), stdev = 52.761
+  CI (99.9%): [3714.769, 3892.091] (assumes normal distribution)
+
+Secondary result "com.kv.jmh.util.metrics.RunWithOutPadTest.trace:gc.count":
+  ≈ 0 counts
 
 
 # JMH version: 1.37
@@ -246,60 +386,113 @@ Result "com.kv.jmh.util.metrics.RunWithOutPadTest.trace":
 
 # Run progress: 100.00% complete, ETA 00:00:00
 # Fork: 1 of 3
-# Warmup Iteration   1: 83.948 ms/op
-# Warmup Iteration   2: 62.127 ms/op
-Iteration   1: 51.829 ms/op
-Iteration   2: 50.548 ms/op
-Iteration   3: 61.453 ms/op
+# Warmup Iteration   1: 99.231 ms/op
+# Warmup Iteration   2: 85.589 ms/op
+Iteration   1: 78.157 ms/op
+                 gc.alloc.rate:      0.123 MB/sec
+                 gc.alloc.rate.norm: 10088.000 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   2: 86.497 ms/op
+                 gc.alloc.rate:      0.111 MB/sec
+                 gc.alloc.rate.norm: 10088.000 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   3: 85.463 ms/op
+                 gc.alloc.rate:      0.120 MB/sec
+                 gc.alloc.rate.norm: 10808.000 B/op
+                 gc.count:           ≈ 0 counts
+
 
 # Run progress: 100.00% complete, ETA 00:00:00
 # Fork: 2 of 3
-# Warmup Iteration   1: 77.236 ms/op
-# Warmup Iteration   2: 57.138 ms/op
-Iteration   1: 51.811 ms/op
-Iteration   2: 42.655 ms/op
-Iteration   3: 63.849 ms/op
+# Warmup Iteration   1: 99.684 ms/op
+# Warmup Iteration   2: 82.749 ms/op
+Iteration   1: 79.389 ms/op
+                 gc.alloc.rate:      0.121 MB/sec
+                 gc.alloc.rate.norm: 10088.000 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   2: 85.654 ms/op
+                 gc.alloc.rate:      0.112 MB/sec
+                 gc.alloc.rate.norm: 10088.000 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   3: 86.368 ms/op
+                 gc.alloc.rate:      0.119 MB/sec
+                 gc.alloc.rate.norm: 10808.000 B/op
+                 gc.count:           ≈ 0 counts
+
 
 # Run progress: 100.00% complete, ETA 00:00:00
 # Fork: 3 of 3
-# Warmup Iteration   1: 83.908 ms/op
-# Warmup Iteration   2: 51.693 ms/op
-Iteration   1: 54.857 ms/op
-Iteration   2: 55.469 ms/op
-Iteration   3: 63.357 ms/op
+# Warmup Iteration   1: 102.640 ms/op
+# Warmup Iteration   2: 91.258 ms/op
+Iteration   1: 78.594 ms/op
+                 gc.alloc.rate:      0.122 MB/sec
+                 gc.alloc.rate.norm: 10088.000 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   2: 71.022 ms/op
+                 gc.alloc.rate:      0.135 MB/sec
+                 gc.alloc.rate.norm: 10088.000 B/op
+                 gc.count:           ≈ 0 counts
+
+Iteration   3: 71.599 ms/op
+                 gc.alloc.rate:      0.144 MB/sec
+                 gc.alloc.rate.norm: 10808.000 B/op
+                 gc.count:           ≈ 0 counts
+
 
 
 Result "com.kv.jmh.util.metrics.RunWithOutPadTest.trace":
   N = 9
-  mean =     55.092 ±(99.9%) 11.618 ms/op
+  mean =     80.305 ±(99.9%) 10.302 ms/op
 
   Histogram, ms/op:
-    [40.000, 42.500) = 0 
-    [42.500, 45.000) = 1 
-    [45.000, 47.500) = 0 
-    [47.500, 50.000) = 0 
-    [50.000, 52.500) = 3 
-    [52.500, 55.000) = 1 
-    [55.000, 57.500) = 1 
-    [57.500, 60.000) = 0 
-    [60.000, 62.500) = 1 
-    [62.500, 65.000) = 2 
-    [65.000, 67.500) = 0 
+    [70.000, 71.250) = 1 
+    [71.250, 72.500) = 1 
+    [72.500, 73.750) = 0 
+    [73.750, 75.000) = 0 
+    [75.000, 76.250) = 0 
+    [76.250, 77.500) = 0 
+    [77.500, 78.750) = 2 
+    [78.750, 80.000) = 1 
+    [80.000, 81.250) = 0 
+    [81.250, 82.500) = 0 
+    [82.500, 83.750) = 0 
+    [83.750, 85.000) = 0 
+    [85.000, 86.250) = 2 
+    [86.250, 87.500) = 2 
+    [87.500, 88.750) = 0 
 
   Percentiles, ms/op:
-      p(0.0000) =     42.655 ms/op
-     p(50.0000) =     54.857 ms/op
-     p(90.0000) =     63.849 ms/op
-     p(95.0000) =     63.849 ms/op
-     p(99.0000) =     63.849 ms/op
-     p(99.9000) =     63.849 ms/op
-     p(99.9900) =     63.849 ms/op
-     p(99.9990) =     63.849 ms/op
-     p(99.9999) =     63.849 ms/op
-    p(100.0000) =     63.849 ms/op
+      p(0.0000) =     71.022 ms/op
+     p(50.0000) =     79.389 ms/op
+     p(90.0000) =     86.497 ms/op
+     p(95.0000) =     86.497 ms/op
+     p(99.0000) =     86.497 ms/op
+     p(99.9000) =     86.497 ms/op
+     p(99.9900) =     86.497 ms/op
+     p(99.9990) =     86.497 ms/op
+     p(99.9999) =     86.497 ms/op
+    p(100.0000) =     86.497 ms/op
+
+Secondary result "com.kv.jmh.util.metrics.RunWithOutPadTest.trace:gc.alloc.rate":
+  0.123 ±(99.9%) 0.017 MB/sec [Average]
+  (min, avg, max) = (0.111, 0.123, 0.144), stdev = 0.010
+  CI (99.9%): [0.106, 0.141] (assumes normal distribution)
+
+Secondary result "com.kv.jmh.util.metrics.RunWithOutPadTest.trace:gc.alloc.rate.norm":
+  10328.000 ±(99.9%) 604.957 B/op [Average]
+  (min, avg, max) = (10088.000, 10328.000, 10808.000), stdev = 360.000
+  CI (99.9%): [9723.043, 10932.957] (assumes normal distribution)
+
+Secondary result "com.kv.jmh.util.metrics.RunWithOutPadTest.trace:gc.count":
+  ≈ 0 counts
 
 
-# Run complete. Total time: 00:05:29
+# Run complete. Total time: 00:05:30
 
 REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
 why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
@@ -313,16 +506,28 @@ works, and factor in a small probability of new VM bugs. Additionally, while com
 different JVMs are already problematic, the performance difference caused by different Blackhole
 modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
 
-Benchmark                          Mode   Cnt   Score    Error   Units
-RunWithOutPadTest.trace           thrpt     9   0.017 ±  0.001  ops/ms
-RunWithOutPadTest.trace            avgt     9  59.523 ±  3.638   ms/op
-RunWithOutPadTest.trace          sample  1547  58.344 ±  0.677   ms/op
-RunWithOutPadTest.trace:p0.00    sample        41.943            ms/op
-RunWithOutPadTest.trace:p0.50    sample        56.492            ms/op
-RunWithOutPadTest.trace:p0.90    sample        69.730            ms/op
-RunWithOutPadTest.trace:p0.95    sample        73.086            ms/op
-RunWithOutPadTest.trace:p0.99    sample        77.532            ms/op
-RunWithOutPadTest.trace:p0.999   sample        88.987            ms/op
-RunWithOutPadTest.trace:p0.9999  sample        91.357            ms/op
-RunWithOutPadTest.trace:p1.00    sample        91.357            ms/op
-RunWithOutPadTest.trace              ss     9  55.092 ± 11.618   ms/op
+Benchmark                                     Mode   Cnt      Score     Error   Units
+RunWithOutPadTest.trace                      thrpt     9      0.017 ±   0.001  ops/ms
+RunWithOutPadTest.trace:gc.alloc.rate        thrpt     9      0.055 ±   0.001  MB/sec
+RunWithOutPadTest.trace:gc.alloc.rate.norm   thrpt     9   3406.081 ±   7.835    B/op
+RunWithOutPadTest.trace:gc.count             thrpt     9        ≈ 0            counts
+RunWithOutPadTest.trace                       avgt     9     58.860 ±   1.056   ms/op
+RunWithOutPadTest.trace:gc.alloc.rate         avgt     9      0.055 ±   0.001  MB/sec
+RunWithOutPadTest.trace:gc.alloc.rate.norm    avgt     9   3406.141 ±   8.497    B/op
+RunWithOutPadTest.trace:gc.count              avgt     9        ≈ 0            counts
+RunWithOutPadTest.trace                     sample  1452     62.230 ±   0.982   ms/op
+RunWithOutPadTest.trace:gc.alloc.rate       sample     9      0.058 ±   0.010  MB/sec
+RunWithOutPadTest.trace:gc.alloc.rate.norm  sample     9   3803.430 ±  88.661    B/op
+RunWithOutPadTest.trace:gc.count            sample     9        ≈ 0            counts
+RunWithOutPadTest.trace:p0.00               sample           37.552             ms/op
+RunWithOutPadTest.trace:p0.50               sample           60.162             ms/op
+RunWithOutPadTest.trace:p0.90               sample           79.299             ms/op
+RunWithOutPadTest.trace:p0.95               sample           84.279             ms/op
+RunWithOutPadTest.trace:p0.99               sample           89.191             ms/op
+RunWithOutPadTest.trace:p0.999              sample           96.279             ms/op
+RunWithOutPadTest.trace:p0.9999             sample           96.338             ms/op
+RunWithOutPadTest.trace:p1.00               sample           96.338             ms/op
+RunWithOutPadTest.trace                         ss     9     80.305 ±  10.302   ms/op
+RunWithOutPadTest.trace:gc.alloc.rate           ss     9      0.123 ±   0.017  MB/sec
+RunWithOutPadTest.trace:gc.alloc.rate.norm      ss     9  10328.000 ± 604.957    B/op
+RunWithOutPadTest.trace:gc.count                ss     9        ≈ 0            counts

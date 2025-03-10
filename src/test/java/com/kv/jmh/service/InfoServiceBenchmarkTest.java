@@ -6,6 +6,7 @@ import com.kv.jmh.util.metrics.RunWithOutPadTest;
 import com.kv.jmh.util.metrics.RunWithPadTest;
 import org.openjdk.jmh.annotations.*;
 import org.openjdk.jmh.infra.Blackhole;
+import org.openjdk.jmh.profile.GCProfiler;
 import org.openjdk.jmh.runner.Runner;
 import org.openjdk.jmh.runner.options.Options;
 import org.openjdk.jmh.runner.options.OptionsBuilder;
@@ -20,7 +21,7 @@ public class InfoServiceBenchmarkTest {
     @Benchmark
     @Fork(3)
     @Measurement(iterations = 3, time = 3, timeUnit = TimeUnit.MILLISECONDS)
-    @Timeout(time = 2, timeUnit = TimeUnit.SECONDS)
+   // @Timeout(time = 2, timeUnit = TimeUnit.SECONDS)
     public void getGadgetInfoTest(Blackhole blackhole, BenchmarkState state) {
         InfoService service = state.getContext().getBean(InfoService.class);
         blackhole.consume(service.getGadgetInfo());
@@ -31,6 +32,7 @@ public class InfoServiceBenchmarkTest {
         //Main.main(args);
         Options opt = new OptionsBuilder()
                 .include(InfoServiceBenchmarkTest.class.getSimpleName()) // Specify the benchmark class
+                .addProfiler(GCProfiler.class) // Monitor the Garbage Collector
                 .exclude(RunWithOutPadTest.class.getSimpleName()) // Exclude other benchmarks
                 .exclude(RunWithArrayTest.class.getSimpleName()) // Exclude other benchmarks
                 .exclude(RunWithListTest.class.getSimpleName()) // Exclude other benchmarks
