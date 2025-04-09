@@ -4,8 +4,11 @@ import com.kv.jmh.dto.InfoDO;
 import io.netty.resolver.DefaultAddressResolverGroup;
 import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.autoconfigure.web.client.RestClientBuilderConfigurer;
+import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.client.reactive.ReactorClientHttpConnector;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestClient;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.netty.http.client.HttpClient;
 
@@ -15,33 +18,27 @@ import java.util.concurrent.CompletableFuture;
 @Service
 public class InfoService {
 
-    private final WebClient webClient;
+    private final RestClient restClient;
 
     @Value("${restful-api.path}")
     private String path;
 
-    public InfoService(WebClient.Builder builder, @Value("${restful-api.endpoint}") String url) {
+    public InfoService(WebClient.Builder builder,  @Value("${restful-api.endpoint}") String url) {
         System.out.println(url);
-        webClient = builder
-                .clientConnector(new ReactorClientHttpConnector(HttpClient.create().resolver(DefaultAddressResolverGroup.INSTANCE)))
+        restClient = RestClient.builder()
                 .baseUrl(url)
+                .defaultHeader("Accept", "application/json")
                 .build();
     }
 
     public List<InfoDO> getGadgetInfo() {
-        CompletableFuture<List<InfoDO>> future = new CompletableFuture<>();
-        webClient.get()
-                .uri(path)
+        return restClient.get().uri(path)
                 .retrieve()
-                .bodyToFlux(InfoDO.class)
-                .collectList()
-                .subscribe(future::complete,
-                        e -> future.completeExceptionally(ExceptionUtils.getRootCause(e)));
-        try {
-            return future.get();
-        } catch (Exception e) {
-            Throwable rootCause = ExceptionUtils.getRootCause(e);
-            throw new RuntimeException(rootCause);
-        }
+                .onStatus(status -> status.value() >= 400,
+                        (request, response) -> {
+                            throw new RuntimeException("Failed to retrieve: " +
+                                    response.getStatusText());
+                        })
+                .body(new ParameterizedTypeReference<List<InfoDO>>() {});
     }
 }
