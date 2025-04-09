@@ -48,7 +48,6 @@ public class GCExample {
                 .output("result/GCExample.txt")
                 .jvmArgs("-Dfile.encoding=UTF-8")
                 .jvmArgs("-Djava.rmi.server.hostname=localhost")
-                .jvmArgs("-Djava.rmi.server.hostname=localhost")
                 .build();
 
         new Runner(options).run();
