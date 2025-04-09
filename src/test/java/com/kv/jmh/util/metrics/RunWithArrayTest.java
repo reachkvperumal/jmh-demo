@@ -41,6 +41,7 @@ public class RunWithArrayTest {
                 .exclude(RunWithPadTest.class.getSimpleName()) // Exclude other benchmarks
                 .output("result/best-case-results.txt")
                 .jvmArgs("-Dfile.encoding=UTF-8")
+                .jvmArgs("-Djava.rmi.server.hostname=localhost")
                 .build();
 
         new Runner(options).run();
