@@ -39,6 +39,7 @@ public class InfoServiceBenchmarkTest {
                 .exclude(RunWithPadTest.class.getSimpleName()) // Exclude other benchmarks
                 .output("result/benchmark-results.txt")
                 .jvmArgs("-Dfile.encoding=UTF-8")
+                .jvmArgs("-Djava.rmi.server.hostname=localhost")
                 .build();
 
         new Runner(opt).run();

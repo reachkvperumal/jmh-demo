@@ -35,6 +35,7 @@ public class RunWithPadTest {
                 .exclude(RunWithListTest.class.getSimpleName()) // Exclude other benchmarks
                 .output("result/pad-case-results.txt")
                 .jvmArgs("-Dfile.encoding=UTF-8")
+                .jvmArgs("-Djava.rmi.server.hostname=localhost")
                 .build();
         new Runner(options).run();
     }
